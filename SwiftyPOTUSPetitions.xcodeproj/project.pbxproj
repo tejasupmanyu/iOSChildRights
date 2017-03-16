@@ -18,8 +18,6 @@
 		D636EFF01E74718A0089253B /* sampleLaw.json in Resources */ = {isa = PBXBuildFile; fileRef = D636EFEF1E74718A0089253B /* sampleLaw.json */; };
 		D645A25A1E76737F002D8346 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645A2591E76737F002D8346 /* LaunchViewController.swift */; };
 		D645A25C1E76766E002D8346 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645A25B1E76766E002D8346 /* HomeViewController.swift */; };
-		D65BF24D1E7A60FD00014092 /* LTMorphingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D65BF24C1E7A60FD00014092 /* LTMorphingLabel.framework */; };
-		D65BF24E1E7A60FD00014092 /* LTMorphingLabel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D65BF24C1E7A60FD00014092 /* LTMorphingLabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D6A6C6A41E76CCAC009EF39A /* CaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6C6A31E76CCAC009EF39A /* CaseTableViewController.swift */; };
 		D6A6C6A61E76CCC2009EF39A /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6C6A51E76CCC2009EF39A /* ContactTableViewController.swift */; };
 		D6A6C6A81E76CCFB009EF39A /* CaseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6C6A71E76CCFB009EF39A /* CaseDetailsViewController.swift */; };
@@ -45,7 +43,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				D6A8C7CD1E77ADB700704C42 /* PaperOnboarding.framework in Embed Frameworks */,
-				D65BF24E1E7A60FD00014092 /* LTMorphingLabel.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +63,6 @@
 		D636EFEF1E74718A0089253B /* sampleLaw.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleLaw.json; sourceTree = "<group>"; };
 		D645A2591E76737F002D8346 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		D645A25B1E76766E002D8346 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		D65BF24C1E7A60FD00014092 /* LTMorphingLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LTMorphingLabel.framework; sourceTree = "<group>"; };
 		D6A6C6A31E76CCAC009EF39A /* CaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseTableViewController.swift; sourceTree = "<group>"; };
 		D6A6C6A51E76CCC2009EF39A /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
 		D6A6C6A71E76CCFB009EF39A /* CaseDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseDetailsViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +85,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6A8C7CC1E77ADB700704C42 /* PaperOnboarding.framework in Frameworks */,
-				D65BF24D1E7A60FD00014092 /* LTMorphingLabel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +94,6 @@
 		D62AAD761E5CA3A60074BFBA = {
 			isa = PBXGroup;
 			children = (
-				D65BF24C1E7A60FD00014092 /* LTMorphingLabel.framework */,
 				D6A8C7CB1E77ADB700704C42 /* PaperOnboarding.framework */,
 				D62AAD811E5CA3A70074BFBA /* SwiftyPOTUSPetitions */,
 				D62AAD801E5CA3A70074BFBA /* Products */,
