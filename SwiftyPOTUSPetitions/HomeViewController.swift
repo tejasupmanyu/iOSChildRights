@@ -16,16 +16,18 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var caseButton: RoundButton!
     @IBOutlet weak var PressButton: RoundButton!
     
+    @IBOutlet weak var creditsButton: RoundButton!
+    
     var stakeButtonCenter: CGPoint!
     var quizButtonCenter: CGPoint!
     var actsButtonCenter: CGPoint!
     var caseButtonCenter: CGPoint!
     var PressButtonCenter: CGPoint!
-    
+    var creditsButtonCenter: CGPoint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationItem.hidesBackButton = true
         PressButton.setTitle("More", for: .normal)
         
         stakeButtonCenter = stakeButton.center
@@ -33,6 +35,7 @@ class HomeViewController: UIViewController {
         actsButtonCenter = actsButton.center
         caseButtonCenter = caseButton.center
         PressButtonCenter = PressButton.center
+        creditsButtonCenter = creditsButton.center
         
         // Do any additional setup after loading the view.
         
@@ -40,7 +43,13 @@ class HomeViewController: UIViewController {
         actsButton.center = PressButton.center
         quizButton.center = PressButton.center
         caseButton.center = PressButton.center
+        creditsButton.center = PressButton.center
         
+        stakeButton.alpha = 0
+        actsButton.alpha = 0
+        quizButton.alpha = 0
+        caseButton.alpha = 0
+        creditsButton.alpha = 0
         
         
         navigationItem.title = "Butterflies & Unicorns"
@@ -56,12 +65,13 @@ class HomeViewController: UIViewController {
         if PressButton.currentTitle == "More"{
             
             
-            UIView.animate(withDuration: 0.3, animations: {
+            UIView.animate(withDuration: 0.5, animations: {
             
                 self.actsButton.alpha = 0.7
                 self.caseButton.alpha = 0.7
                 self.stakeButton.alpha = 0.7
                 self.quizButton.alpha = 0.7
+                self.creditsButton.alpha = 0.7
                 
                 
                 
@@ -69,6 +79,7 @@ class HomeViewController: UIViewController {
                 self.caseButton.center = self.caseButtonCenter
                 self.stakeButton.center = self.stakeButtonCenter
                 self.quizButton.center = self.quizButtonCenter
+                self.creditsButton.center = self.creditsButtonCenter
                 
 
                 
@@ -87,11 +98,13 @@ class HomeViewController: UIViewController {
                 self.caseButton.alpha = 0
                 self.stakeButton.alpha = 0
                 self.quizButton.alpha = 0
+                self.creditsButton.alpha = 0
                 
                 self.actsButton.center = self.PressButton.center
                 self.caseButton.center = self.PressButton.center
                 self.stakeButton.center = self.PressButton.center
                 self.quizButton.center = self.PressButton.center
+                self.creditsButton.center = self.PressButton.center
             
             })
             

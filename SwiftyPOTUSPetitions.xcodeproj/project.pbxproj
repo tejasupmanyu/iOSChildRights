@@ -18,6 +18,8 @@
 		D636EFF01E74718A0089253B /* sampleLaw.json in Resources */ = {isa = PBXBuildFile; fileRef = D636EFEF1E74718A0089253B /* sampleLaw.json */; };
 		D645A25A1E76737F002D8346 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645A2591E76737F002D8346 /* LaunchViewController.swift */; };
 		D645A25C1E76766E002D8346 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645A25B1E76766E002D8346 /* HomeViewController.swift */; };
+		D65BF2521E7A81AC00014092 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65BF2511E7A81AC00014092 /* CreditsViewController.swift */; };
+		D65BF2561E7A92CF00014092 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65BF2551E7A92CF00014092 /* PeopleTableViewCell.swift */; };
 		D6A6C6A41E76CCAC009EF39A /* CaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6C6A31E76CCAC009EF39A /* CaseTableViewController.swift */; };
 		D6A6C6A61E76CCC2009EF39A /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6C6A51E76CCC2009EF39A /* ContactTableViewController.swift */; };
 		D6A6C6A81E76CCFB009EF39A /* CaseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6C6A71E76CCFB009EF39A /* CaseDetailsViewController.swift */; };
@@ -63,6 +65,8 @@
 		D636EFEF1E74718A0089253B /* sampleLaw.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleLaw.json; sourceTree = "<group>"; };
 		D645A2591E76737F002D8346 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		D645A25B1E76766E002D8346 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D65BF2511E7A81AC00014092 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
+		D65BF2551E7A92CF00014092 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
 		D6A6C6A31E76CCAC009EF39A /* CaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseTableViewController.swift; sourceTree = "<group>"; };
 		D6A6C6A51E76CCC2009EF39A /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
 		D6A6C6A71E76CCFB009EF39A /* CaseDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseDetailsViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 				D6A6C6AF1E76DB79009EF39A /* QuizLaunchViewController.swift */,
 				D6A6C6B11E76DC7C009EF39A /* QuizViewController.swift */,
 				D60CE7511E7991B5002AA3FB /* ScoreViewController.swift */,
+				D65BF2511E7A81AC00014092 /* CreditsViewController.swift */,
+				D65BF2551E7A92CF00014092 /* PeopleTableViewCell.swift */,
 				D62AAD861E5CA3A70074BFBA /* Main.storyboard */,
 				D62AAD891E5CA3A70074BFBA /* Assets.xcassets */,
 				D62AAD8B1E5CA3A70074BFBA /* LaunchScreen.storyboard */,
@@ -221,10 +227,12 @@
 			files = (
 				D6A8C7D41E77B33E00704C42 /* tutorialViewController.swift in Sources */,
 				D6A6C6AA1E76CD0B009EF39A /* ContactDetailsViewController.swift in Sources */,
+				D65BF2561E7A92CF00014092 /* PeopleTableViewCell.swift in Sources */,
 				D6A6C6A41E76CCAC009EF39A /* CaseTableViewController.swift in Sources */,
 				D6A6C6B01E76DB79009EF39A /* QuizLaunchViewController.swift in Sources */,
 				D6A6C6B21E76DC7C009EF39A /* QuizViewController.swift in Sources */,
 				D62AAD951E5CA8200074BFBA /* SwiftyJSON.swift in Sources */,
+				D65BF2521E7A81AC00014092 /* CreditsViewController.swift in Sources */,
 				D6B59FA21E7964F70009DDA0 /* RoundButton.swift in Sources */,
 				D645A25A1E76737F002D8346 /* LaunchViewController.swift in Sources */,
 				D62AAD851E5CA3A70074BFBA /* ViewController.swift in Sources */,
