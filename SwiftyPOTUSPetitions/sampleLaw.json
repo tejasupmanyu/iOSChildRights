@@ -1,0 +1,28 @@
+{
+    "Acts" :[{
+            "title"      : "Sexual Abuse",
+            "description":"Kuch hai yaha sexual abuse se sambandhit",
+            "punishments": "5 Years of Jail or $1500 or both.",
+            "references": "visionarray.com",
+            },
+            
+            {
+            "title"      : "Child Labour",
+            "description":"child labour apradh hai",
+            "punishments": "5 Years of Jail or $1500 or both.",
+            "references": "apple.com",
+            },
+            
+            {
+            "title"      : "Child Marriage",
+            "description":"Ye bhi galat hai",
+            "punishments": "5 Years of Jail or $1500 or both.",
+            "references": "google.com",
+            }]
+    
+    
+    
+           
+    
+}
+

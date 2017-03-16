@@ -1,0 +1,19 @@
+{
+  "commitish" : "2.0.1",
+  "iOS" : [
+    {
+      "hash" : "5073f9a0939ea78fa69b9b819a9de59af6517a85858afebd98e7be5c6f882ab4",
+      "name" : "PaperOnboarding"
+    }
+  ],
+  "xcodeVersion" : "Xcode 8.1\nBuild version 8B62",
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "Mac" : [
+
+  ]
+}

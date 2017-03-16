@@ -1,0 +1,19 @@
+{
+  "commitish" : "0.4.0",
+  "iOS" : [
+    {
+      "hash" : "d1bcecc52cd8c245b4ad33958e0057c41b01c669dfd8d730b1004a2cbeedcafc",
+      "name" : "LTMorphingLabel"
+    }
+  ],
+  "xcodeVersion" : "Xcode 8.1\nBuild version 8B62",
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "Mac" : [
+
+  ]
+}

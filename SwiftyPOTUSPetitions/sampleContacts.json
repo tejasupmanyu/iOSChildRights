@@ -1,0 +1,24 @@
+{
+    "Contacts" :[{
+            "name"      : "Bacche Bachao Agency",
+            "address"   :"New Delhi",
+            "details"   : "someone@gmail.com",
+            },
+
+            {
+            "name"      : "Nigga Protection Organisation",
+            "address"    : "Orissa",
+            "details"    : "someone@xyz.com",
+            },
+
+            {
+            "name"      : "Wildlife of children protection",
+            "address"    : "Haridwar",
+            "details"    : "nigga@nigga.io",
+            }]
+
+
+
+
+
+}
