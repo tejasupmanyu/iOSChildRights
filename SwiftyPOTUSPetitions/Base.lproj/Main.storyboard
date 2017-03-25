@@ -69,13 +69,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="score" translatesAutoresizingMaskIntoConstraints="NO" id="wqG-B4-nbn">
-                                <rect key="frame" x="67" y="82" width="305" height="101"/>
+                                <rect key="frame" x="67" y="38" width="305" height="101"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="101" id="LeU-fn-ZQN"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="number" translatesAutoresizingMaskIntoConstraints="NO" id="LKK-Gf-0g1">
-                                <rect key="frame" x="0.0" y="208" width="375" height="162"/>
+                                <rect key="frame" x="0.0" y="164" width="375" height="206"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="thL-eb-Yf6">
                                 <rect key="frame" x="0.0" y="500" width="203" height="114"/>
@@ -83,7 +83,7 @@
                                     <constraint firstAttribute="width" constant="203" id="h7k-7o-acY"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mBg-Ce-l7H">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mBg-Ce-l7H">
                                 <rect key="frame" x="28" y="225" width="318" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
@@ -103,7 +103,7 @@
                                     <constraint firstAttribute="height" constant="84" id="UfE-K4-SZt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
-                                <state key="normal" title="Button 1">
+                                <state key="normal">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -116,7 +116,7 @@
                                     <constraint firstAttribute="width" constant="169" id="Fng-Bw-W9f"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
-                                <state key="normal" title="Button 2">
+                                <state key="normal">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -124,7 +124,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBA-fH-2RS">
-                                <rect key="frame" x="138" y="106" width="152" height="53"/>
+                                <rect key="frame" x="138" y="62" width="152" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="152" id="JgV-a0-UoE"/>
                                 </constraints>
@@ -209,6 +209,9 @@
                                 <state key="normal" title="Home" backgroundImage="orange">
                                     <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="u7r-mF-2ej" kind="show" id="rsO-k7-sfm"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="high" translatesAutoresizingMaskIntoConstraints="NO" id="jDo-2L-elw">
                                 <rect key="frame" x="132" y="189" width="100" height="100"/>
@@ -889,7 +892,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xrh-pc-WAz" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="d7R-G5-kSA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d7R-G5-kSA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -921,4 +924,7 @@
         <image name="quiz" width="500" height="250"/>
         <image name="score" width="149" height="50"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="rsO-k7-sfm"/>
+    </inferredMetricsTieBreakers>
 </document>

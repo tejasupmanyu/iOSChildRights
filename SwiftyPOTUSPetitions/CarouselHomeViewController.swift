@@ -14,6 +14,7 @@ class CarouselHomeViewController: UIViewController, UICollectionViewDataSource,U
     
     @IBOutlet weak var BackgroundImage: UIImageView!
     @IBOutlet weak var carouselView: UICollectionView!
+    
     var BackGroundImageArray = ["HomeScreen","LaunchScreen","flag","boys","me"]
     var CellTitles = ["Acts","Case Studies","StakeHolders","Quiz","Credits"]
     var vcs = ["ActsList","CasesList","ContactsList","QuizStart","CreditsList"]
@@ -23,7 +24,7 @@ class CarouselHomeViewController: UIViewController, UICollectionViewDataSource,U
         
         carouselView.dataSource = self
         carouselView.delegate = self
-        
+        navigationItem.hidesBackButton = true
         
     }
     
