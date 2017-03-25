@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		D60CE7521E7991B5002AA3FB /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60CE7511E7991B5002AA3FB /* ScoreViewController.swift */; };
+		D612AA001E871353003E6E04 /* CaseStudyDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D612A9FF1E871353003E6E04 /* CaseStudyDetailsTableViewController.swift */; };
 		D62AAD831E5CA3A70074BFBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AAD821E5CA3A70074BFBA /* AppDelegate.swift */; };
 		D62AAD851E5CA3A70074BFBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AAD841E5CA3A70074BFBA /* ViewController.swift */; };
 		D62AAD881E5CA3A70074BFBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D62AAD861E5CA3A70074BFBA /* Main.storyboard */; };
 		D62AAD8A1E5CA3A70074BFBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D62AAD891E5CA3A70074BFBA /* Assets.xcassets */; };
 		D62AAD8D1E5CA3A70074BFBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D62AAD8B1E5CA3A70074BFBA /* LaunchScreen.storyboard */; };
 		D62AAD951E5CA8200074BFBA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AAD941E5CA8200074BFBA /* SwiftyJSON.swift */; };
-		D62AAD971E5CA8A80074BFBA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AAD961E5CA8A80074BFBA /* DetailViewController.swift */; };
 		D636EFF01E74718A0089253B /* sampleLaw.json in Resources */ = {isa = PBXBuildFile; fileRef = D636EFEF1E74718A0089253B /* sampleLaw.json */; };
 		D645A25A1E76737F002D8346 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645A2591E76737F002D8346 /* LaunchViewController.swift */; };
 		D65BF2521E7A81AC00014092 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65BF2511E7A81AC00014092 /* CreditsViewController.swift */; };
 		D65BF2561E7A92CF00014092 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65BF2551E7A92CF00014092 /* PeopleTableViewCell.swift */; };
+		D68DB52B1E86D9DB00B47D56 /* ActDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68DB52A1E86D9DB00B47D56 /* ActDetailsViewController.swift */; };
+		D68DB52D1E86DBA500B47D56 /* ActDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68DB52C1E86DBA500B47D56 /* ActDetailsTableViewCell.swift */; };
 		D6A6C6A41E76CCAC009EF39A /* CaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6C6A31E76CCAC009EF39A /* CaseTableViewController.swift */; };
 		D6A6C6A61E76CCC2009EF39A /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6C6A51E76CCC2009EF39A /* ContactTableViewController.swift */; };
 		D6A6C6A81E76CCFB009EF39A /* CaseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6C6A71E76CCFB009EF39A /* CaseDetailsViewController.swift */; };
@@ -54,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		D60CE7511E7991B5002AA3FB /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		D612A9FF1E871353003E6E04 /* CaseStudyDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseStudyDetailsTableViewController.swift; sourceTree = "<group>"; };
 		D62AAD7F1E5CA3A70074BFBA /* HackathonPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62AAD821E5CA3A70074BFBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D62AAD841E5CA3A70074BFBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,11 +65,12 @@
 		D62AAD8C1E5CA3A70074BFBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D62AAD8E1E5CA3A70074BFBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D62AAD941E5CA8200074BFBA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
-		D62AAD961E5CA8A80074BFBA /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D636EFEF1E74718A0089253B /* sampleLaw.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleLaw.json; sourceTree = "<group>"; };
 		D645A2591E76737F002D8346 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		D65BF2511E7A81AC00014092 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		D65BF2551E7A92CF00014092 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
+		D68DB52A1E86D9DB00B47D56 /* ActDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActDetailsViewController.swift; sourceTree = "<group>"; };
+		D68DB52C1E86DBA500B47D56 /* ActDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		D6A6C6A31E76CCAC009EF39A /* CaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseTableViewController.swift; sourceTree = "<group>"; };
 		D6A6C6A51E76CCC2009EF39A /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
 		D6A6C6A71E76CCFB009EF39A /* CaseDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseDetailsViewController.swift; sourceTree = "<group>"; };
@@ -126,8 +130,10 @@
 				D6B59FA11E7964F70009DDA0 /* RoundButton.swift */,
 				D6A6C6A31E76CCAC009EF39A /* CaseTableViewController.swift */,
 				D6A6C6A51E76CCC2009EF39A /* ContactTableViewController.swift */,
-				D62AAD961E5CA8A80074BFBA /* DetailViewController.swift */,
+				D68DB52A1E86D9DB00B47D56 /* ActDetailsViewController.swift */,
+				D68DB52C1E86DBA500B47D56 /* ActDetailsTableViewCell.swift */,
 				D6A6C6A71E76CCFB009EF39A /* CaseDetailsViewController.swift */,
+				D612A9FF1E871353003E6E04 /* CaseStudyDetailsTableViewController.swift */,
 				D6A6C6A91E76CD0B009EF39A /* ContactDetailsViewController.swift */,
 				D6A6C6AF1E76DB79009EF39A /* QuizLaunchViewController.swift */,
 				D6A6C6B11E76DC7C009EF39A /* QuizViewController.swift */,
@@ -235,6 +241,7 @@
 				D65BF2561E7A92CF00014092 /* PeopleTableViewCell.swift in Sources */,
 				D6A6C6A41E76CCAC009EF39A /* CaseTableViewController.swift in Sources */,
 				D6A6C6B01E76DB79009EF39A /* QuizLaunchViewController.swift in Sources */,
+				D68DB52D1E86DBA500B47D56 /* ActDetailsTableViewCell.swift in Sources */,
 				D6A6C6B21E76DC7C009EF39A /* QuizViewController.swift in Sources */,
 				D62AAD951E5CA8200074BFBA /* SwiftyJSON.swift in Sources */,
 				D65BF2521E7A81AC00014092 /* CreditsViewController.swift in Sources */,
@@ -242,10 +249,11 @@
 				D645A25A1E76737F002D8346 /* LaunchViewController.swift in Sources */,
 				D62AAD851E5CA3A70074BFBA /* ViewController.swift in Sources */,
 				D6A6C6A81E76CCFB009EF39A /* CaseDetailsViewController.swift in Sources */,
+				D68DB52B1E86D9DB00B47D56 /* ActDetailsViewController.swift in Sources */,
 				D6A6C6A61E76CCC2009EF39A /* ContactTableViewController.swift in Sources */,
 				D6A8C7D21E77B24800704C42 /* onBoard.swift in Sources */,
 				D62AAD831E5CA3A70074BFBA /* AppDelegate.swift in Sources */,
-				D62AAD971E5CA8A80074BFBA /* DetailViewController.swift in Sources */,
+				D612AA001E871353003E6E04 /* CaseStudyDetailsTableViewController.swift in Sources */,
 				D60CE7521E7991B5002AA3FB /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

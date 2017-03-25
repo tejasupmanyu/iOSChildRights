@@ -112,10 +112,11 @@ class ViewController: UITableViewController, UISearchResultsUpdating{
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "ActDetails") as? ActDetailsViewController {
             // 2: success! Set its property
             vc.detailItem = laws[indexPath.row]
-            
+            vc.indexOfCell = indexPath.row
+
             // 3: now push it onto the navigation controller
             navigationController?.pushViewController(vc, animated: true)
         }

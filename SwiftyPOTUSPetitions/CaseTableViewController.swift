@@ -114,10 +114,10 @@ class CaseTableViewController: UITableViewController,UISearchResultsUpdating {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "Case") as? CaseDetailsViewController {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "CaseStudyDetails") as? CaseStudyDetailsTableViewController {
             // 2: success! Set its property
             vc.detailItem = cases[indexPath.row]
-            
+            vc.indexOfCell = indexPath.row
             // 3: now push it onto the navigation controller
             navigationController?.pushViewController(vc, animated: true)
         }

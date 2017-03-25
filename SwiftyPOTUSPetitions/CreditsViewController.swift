@@ -10,7 +10,7 @@ import UIKit
 
 class CreditsViewController: UITableViewController {
     
-    var details = [["name":"Tejas Upmanyu","job":"iOS Developer","bio":"Brother's Keeper.","image":"me"],["name":"Shabbir Hussain","job":"Android Developer","bio":"Something in a few lines","image":"shabbir"],["name":"Shivam Bharadwaj","job":"Web Developer","bio":"Something in a few lines","image":"c1"],["name":"Sidhant Mishra","job":"Design & Support","bio":"Something in a few lines","image":"c1"],["name":"Kavya Gupta","job":"Data Curator & Design","bio":"Something in a few lines","image":"c1"],["name":"Nidhi Tiwari","job":"Data Curator & Design","bio":"Something in a few lines","image":"c1"]]
+    var details = [["name":"Tejas Upmanyu","job":"iOS Developer","bio":"Brother's Keeper.","image":"me"],["name":"Shabbir Hussain","job":"Android Developer","bio":"Something in a few lines","image":"shabbir"],["name":"Shivam Bharadwaj","job":"Web Developer","bio":"Something in a few lines","image":"c1"],["name":"Sidhant Mishra","job":"Design & Support","bio":"Something in a few lines","image":"c1"],["name":"Kavya Gupta","job":"Data Curator & Design","bio":"Something in a few lines","image":"kavya"],["name":"Nidhi Tiwari","job":"Data Curator & Design","bio":"Something in a few lines","image":"c1"]]
     override func viewDidLoad() {
         super.viewDidLoad()
 
