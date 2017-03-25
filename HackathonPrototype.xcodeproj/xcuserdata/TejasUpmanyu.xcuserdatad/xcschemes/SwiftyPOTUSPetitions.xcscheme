@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D62AAD7E1E5CA3A60074BFBA"
-               BuildableName = "SwiftyPOTUSPetitions.app"
-               BlueprintName = "SwiftyPOTUSPetitions"
-               ReferencedContainer = "container:SwiftyPOTUSPetitions.xcodeproj">
+               BuildableName = "HackathonPrototype.app"
+               BlueprintName = "HackathonPrototype"
+               ReferencedContainer = "container:HackathonPrototype.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D62AAD7E1E5CA3A60074BFBA"
-            BuildableName = "SwiftyPOTUSPetitions.app"
-            BlueprintName = "SwiftyPOTUSPetitions"
-            ReferencedContainer = "container:SwiftyPOTUSPetitions.xcodeproj">
+            BuildableName = "HackathonPrototype.app"
+            BlueprintName = "HackathonPrototype"
+            ReferencedContainer = "container:HackathonPrototype.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D62AAD7E1E5CA3A60074BFBA"
-            BuildableName = "SwiftyPOTUSPetitions.app"
-            BlueprintName = "SwiftyPOTUSPetitions"
-            ReferencedContainer = "container:SwiftyPOTUSPetitions.xcodeproj">
+            BuildableName = "HackathonPrototype.app"
+            BlueprintName = "HackathonPrototype"
+            ReferencedContainer = "container:HackathonPrototype.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D62AAD7E1E5CA3A60074BFBA"
-            BuildableName = "SwiftyPOTUSPetitions.app"
-            BlueprintName = "SwiftyPOTUSPetitions"
-            ReferencedContainer = "container:SwiftyPOTUSPetitions.xcodeproj">
+            BuildableName = "HackathonPrototype.app"
+            BlueprintName = "HackathonPrototype"
+            ReferencedContainer = "container:HackathonPrototype.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

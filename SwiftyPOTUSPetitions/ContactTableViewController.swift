@@ -8,12 +8,22 @@
 
 import UIKit
 
-class ContactTableViewController: UITableViewController {
+class ContactTableViewController: UITableViewController, UISearchResultsUpdating {
 
     var contacts = [[String: String]]()
+    var filteredContacts = [[String: String]]()
+    let resultSearchController = UISearchController(searchResultsController: nil)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        filteredContacts = contacts
+        self.resultSearchController.searchResultsUpdater = self
+        self.resultSearchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        self.tableView.tableHeaderView = self.resultSearchController.searchBar
+        self.tableView.reloadData()
         
         let backgroundImage = UIImage(named: "hands.jpg")
         let imageView = UIImageView(image: backgroundImage)
@@ -49,7 +59,7 @@ class ContactTableViewController: UITableViewController {
             
             contacts.append(obj)
         }
-        
+        filteredContacts = contacts
         tableView.reloadData()
     }
     
@@ -64,7 +74,7 @@ class ContactTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return contacts.count
+        return filteredContacts.count
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
@@ -74,7 +84,7 @@ class ContactTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Contact", for: indexPath)
-        let thisCase = contacts[indexPath.row]
+        let thisCase = filteredContacts[indexPath.row]
         
         cell.textLabel?.text = thisCase["name"]
         
@@ -86,6 +96,17 @@ class ContactTableViewController: UITableViewController {
         let ac = UIAlertController(title: "Loading error", message: "There was a problem loading; please try again.", preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        if searchController.searchBar.text! == "" {
+            filteredContacts = contacts
+        }
+        else{
+            filteredContacts = contacts.filter({($0["name"]?.lowercased().contains(searchController.searchBar.text!.lowercased()))!})
+        }
+        
+        self.tableView.reloadData()
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

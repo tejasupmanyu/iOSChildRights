@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             initialViewController = sb.instantiateViewController(withIdentifier: "splashScreen")
 
         }
-        
+                
         userDefaults.set(0, forKey: "highScore")
         
         window?.rootViewController = initialViewController

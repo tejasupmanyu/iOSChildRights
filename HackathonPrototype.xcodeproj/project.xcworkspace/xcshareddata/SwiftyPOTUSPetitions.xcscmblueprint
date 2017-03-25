@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "075729B3CCB41CED57E53C862FC205AE81841D12",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "075729B3CCB41CED57E53C862FC205AE81841D12" : 9223372036854775807,
+    "5868E9EA686272DB23E266447B7BF44304C8D4F8" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "325A2FF9-AD54-4C25-9A36-B34AD30D1447",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "075729B3CCB41CED57E53C862FC205AE81841D12" : "HackathonPrototype6\/",
+    "5868E9EA686272DB23E266447B7BF44304C8D4F8" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SwiftyPOTUSPetitions",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SwiftyPOTUSPetitions.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tejasupmanyu\/iOSChildRights.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "075729B3CCB41CED57E53C862FC205AE81841D12"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tejasupmanyu\/iOSDev.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5868E9EA686272DB23E266447B7BF44304C8D4F8"
+    }
+  ]
+}

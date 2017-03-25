@@ -17,7 +17,6 @@
 		D62AAD971E5CA8A80074BFBA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AAD961E5CA8A80074BFBA /* DetailViewController.swift */; };
 		D636EFF01E74718A0089253B /* sampleLaw.json in Resources */ = {isa = PBXBuildFile; fileRef = D636EFEF1E74718A0089253B /* sampleLaw.json */; };
 		D645A25A1E76737F002D8346 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645A2591E76737F002D8346 /* LaunchViewController.swift */; };
-		D645A25C1E76766E002D8346 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645A25B1E76766E002D8346 /* HomeViewController.swift */; };
 		D65BF2521E7A81AC00014092 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65BF2511E7A81AC00014092 /* CreditsViewController.swift */; };
 		D65BF2561E7A92CF00014092 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65BF2551E7A92CF00014092 /* PeopleTableViewCell.swift */; };
 		D6A6C6A41E76CCAC009EF39A /* CaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6C6A31E76CCAC009EF39A /* CaseTableViewController.swift */; };
@@ -35,6 +34,8 @@
 		D6B59FA21E7964F70009DDA0 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B59FA11E7964F70009DDA0 /* RoundButton.swift */; };
 		D6E2AB831E79C3DE00F69BEF /* bg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D6E2AB821E79C3DE00F69BEF /* bg.mp4 */; };
 		D6E650CF1E7710EA00F5A61B /* nar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D6E650CE1E7710EA00F5A61B /* nar.mp3 */; };
+		D6F3D28A1E8581180072BF1B /* CarouselHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3D2891E8581180072BF1B /* CarouselHomeViewController.swift */; };
+		D6F3D28C1E858B4E0072BF1B /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3D28B1E858B4E0072BF1B /* CarouselCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,7 +54,7 @@
 
 /* Begin PBXFileReference section */
 		D60CE7511E7991B5002AA3FB /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
-		D62AAD7F1E5CA3A70074BFBA /* SwiftyPOTUSPetitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyPOTUSPetitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D62AAD7F1E5CA3A70074BFBA /* HackathonPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62AAD821E5CA3A70074BFBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D62AAD841E5CA3A70074BFBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D62AAD871E5CA3A70074BFBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		D62AAD961E5CA8A80074BFBA /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D636EFEF1E74718A0089253B /* sampleLaw.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleLaw.json; sourceTree = "<group>"; };
 		D645A2591E76737F002D8346 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
-		D645A25B1E76766E002D8346 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D65BF2511E7A81AC00014092 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		D65BF2551E7A92CF00014092 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
 		D6A6C6A31E76CCAC009EF39A /* CaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseTableViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +81,8 @@
 		D6B59FA11E7964F70009DDA0 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		D6E2AB821E79C3DE00F69BEF /* bg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg.mp4; sourceTree = "<group>"; };
 		D6E650CE1E7710EA00F5A61B /* nar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nar.mp3; sourceTree = "<group>"; };
+		D6F3D2891E8581180072BF1B /* CarouselHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselHomeViewController.swift; sourceTree = "<group>"; };
+		D6F3D28B1E858B4E0072BF1B /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +109,7 @@
 		D62AAD801E5CA3A70074BFBA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D62AAD7F1E5CA3A70074BFBA /* SwiftyPOTUSPetitions.app */,
+				D62AAD7F1E5CA3A70074BFBA /* HackathonPrototype.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,7 +122,6 @@
 				D6A8C7D11E77B24800704C42 /* onBoard.swift */,
 				D6A8C7D31E77B33E00704C42 /* tutorialViewController.swift */,
 				D645A2591E76737F002D8346 /* LaunchViewController.swift */,
-				D645A25B1E76766E002D8346 /* HomeViewController.swift */,
 				D62AAD841E5CA3A70074BFBA /* ViewController.swift */,
 				D6B59FA11E7964F70009DDA0 /* RoundButton.swift */,
 				D6A6C6A31E76CCAC009EF39A /* CaseTableViewController.swift */,
@@ -132,6 +133,8 @@
 				D6A6C6B11E76DC7C009EF39A /* QuizViewController.swift */,
 				D60CE7511E7991B5002AA3FB /* ScoreViewController.swift */,
 				D65BF2511E7A81AC00014092 /* CreditsViewController.swift */,
+				D6F3D2891E8581180072BF1B /* CarouselHomeViewController.swift */,
+				D6F3D28B1E858B4E0072BF1B /* CarouselCollectionViewCell.swift */,
 				D65BF2551E7A92CF00014092 /* PeopleTableViewCell.swift */,
 				D62AAD861E5CA3A70074BFBA /* Main.storyboard */,
 				D62AAD891E5CA3A70074BFBA /* Assets.xcassets */,
@@ -139,8 +142,8 @@
 				D62AAD941E5CA8200074BFBA /* SwiftyJSON.swift */,
 				D62AAD8E1E5CA3A70074BFBA /* Info.plist */,
 				D6A6C6AB1E76CFC5009EF39A /* sampleCases.json */,
-				D6A6C6AC1E76CFC5009EF39A /* sampleContacts.json */,
 				D636EFEF1E74718A0089253B /* sampleLaw.json */,
+				D6A6C6AC1E76CFC5009EF39A /* sampleContacts.json */,
 				D6E650CE1E7710EA00F5A61B /* nar.mp3 */,
 			);
 			path = SwiftyPOTUSPetitions;
@@ -149,9 +152,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D62AAD7E1E5CA3A60074BFBA /* SwiftyPOTUSPetitions */ = {
+		D62AAD7E1E5CA3A60074BFBA /* HackathonPrototype */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D62AAD911E5CA3A70074BFBA /* Build configuration list for PBXNativeTarget "SwiftyPOTUSPetitions" */;
+			buildConfigurationList = D62AAD911E5CA3A70074BFBA /* Build configuration list for PBXNativeTarget "HackathonPrototype" */;
 			buildPhases = (
 				D62AAD7B1E5CA3A60074BFBA /* Sources */,
 				D62AAD7C1E5CA3A60074BFBA /* Frameworks */,
@@ -162,9 +165,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftyPOTUSPetitions;
+			name = HackathonPrototype;
 			productName = SwiftyPOTUSPetitions;
-			productReference = D62AAD7F1E5CA3A70074BFBA /* SwiftyPOTUSPetitions.app */;
+			productReference = D62AAD7F1E5CA3A70074BFBA /* HackathonPrototype.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -184,7 +187,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D62AAD7A1E5CA3A60074BFBA /* Build configuration list for PBXProject "SwiftyPOTUSPetitions" */;
+			buildConfigurationList = D62AAD7A1E5CA3A60074BFBA /* Build configuration list for PBXProject "HackathonPrototype" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -197,7 +200,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D62AAD7E1E5CA3A60074BFBA /* SwiftyPOTUSPetitions */,
+				D62AAD7E1E5CA3A60074BFBA /* HackathonPrototype */,
 			);
 		};
 /* End PBXProject section */
@@ -225,8 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F3D28C1E858B4E0072BF1B /* CarouselCollectionViewCell.swift in Sources */,
 				D6A8C7D41E77B33E00704C42 /* tutorialViewController.swift in Sources */,
 				D6A6C6AA1E76CD0B009EF39A /* ContactDetailsViewController.swift in Sources */,
+				D6F3D28A1E8581180072BF1B /* CarouselHomeViewController.swift in Sources */,
 				D65BF2561E7A92CF00014092 /* PeopleTableViewCell.swift in Sources */,
 				D6A6C6A41E76CCAC009EF39A /* CaseTableViewController.swift in Sources */,
 				D6A6C6B01E76DB79009EF39A /* QuizLaunchViewController.swift in Sources */,
@@ -241,7 +246,6 @@
 				D6A8C7D21E77B24800704C42 /* onBoard.swift in Sources */,
 				D62AAD831E5CA3A70074BFBA /* AppDelegate.swift in Sources */,
 				D62AAD971E5CA8A80074BFBA /* DetailViewController.swift in Sources */,
-				D645A25C1E76766E002D8346 /* HomeViewController.swift in Sources */,
 				D60CE7521E7991B5002AA3FB /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,7 +375,7 @@
 				);
 				INFOPLIST_FILE = SwiftyPOTUSPetitions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = In.VisionArray.SwiftyPOTUSPetitions;
+				PRODUCT_BUNDLE_IDENTIFIER = In.VisionArray.HackathonPrototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -389,7 +393,7 @@
 				);
 				INFOPLIST_FILE = SwiftyPOTUSPetitions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = In.VisionArray.SwiftyPOTUSPetitions;
+				PRODUCT_BUNDLE_IDENTIFIER = In.VisionArray.HackathonPrototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -398,7 +402,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D62AAD7A1E5CA3A60074BFBA /* Build configuration list for PBXProject "SwiftyPOTUSPetitions" */ = {
+		D62AAD7A1E5CA3A60074BFBA /* Build configuration list for PBXProject "HackathonPrototype" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D62AAD8F1E5CA3A70074BFBA /* Debug */,
@@ -407,7 +411,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D62AAD911E5CA3A70074BFBA /* Build configuration list for PBXNativeTarget "SwiftyPOTUSPetitions" */ = {
+		D62AAD911E5CA3A70074BFBA /* Build configuration list for PBXNativeTarget "HackathonPrototype" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D62AAD921E5CA3A70074BFBA /* Debug */,

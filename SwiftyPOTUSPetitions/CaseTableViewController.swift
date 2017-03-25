@@ -8,13 +8,25 @@
 
 import UIKit
 
-class CaseTableViewController: UITableViewController {
+class CaseTableViewController: UITableViewController,UISearchResultsUpdating {
     
     var cases = [[String: String]]()
+    var filteredCases = [[String: String]]()
+    let resultSearchController = UISearchController(searchResultsController: nil)
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        filteredCases = cases
+        self.resultSearchController.searchResultsUpdater = self
+        self.resultSearchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        self.tableView.tableHeaderView = self.resultSearchController.searchBar
+        self.tableView.reloadData()
+        
+        
+        
         let backgroundImage = UIImage(named: "teach.jpg")
         let imageView = UIImageView(image: backgroundImage)
         self.tableView.backgroundView = imageView
@@ -49,7 +61,7 @@ class CaseTableViewController: UITableViewController {
             
             cases.append(obj)
         }
-        
+        filteredCases = cases
         tableView.reloadData()
     }
 
@@ -64,7 +76,7 @@ class CaseTableViewController: UITableViewController {
     
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cases.count
+        return filteredCases.count
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
@@ -74,13 +86,25 @@ class CaseTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Case", for: indexPath)
-        let thisCase = cases[indexPath.row]
+        let thisCase = filteredCases[indexPath.row]
         
         cell.textLabel?.text = thisCase["title"]
         
         return cell
     }
     
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        if searchController.searchBar.text! == "" {
+            filteredCases = cases
+        }
+        else{
+            filteredCases = cases.filter({($0["title"]?.lowercased().contains(searchController.searchBar.text!.lowercased()))!})
+        }
+        
+        self.tableView.reloadData()
+    }
+
 
     func showError() {
         let ac = UIAlertController(title: "Loading error", message: "There was a problem loading; please try again.", preferredStyle: .alert)

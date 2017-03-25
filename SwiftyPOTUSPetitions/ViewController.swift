@@ -8,9 +8,12 @@
 
 import UIKit
 
-class ViewController: UITableViewController{
+class ViewController: UITableViewController, UISearchResultsUpdating{
     
     var laws = [[String: String]]()
+    var filteredLaws = [[String: String]]()
+    let resultSearchController = UISearchController(searchResultsController: nil)
+    
     
     override func viewDidAppear(_ animated: Bool) {
             }
@@ -19,7 +22,15 @@ class ViewController: UITableViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let backgroundImage = UIImage(named: "boys.jpg")
+        filteredLaws = laws
+    
+        self.resultSearchController.searchResultsUpdater = self
+        self.resultSearchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        self.tableView.tableHeaderView = self.resultSearchController.searchBar
+        self.tableView.reloadData()
+        
+        let backgroundImage = UIImage(named:"ActsHome.jpg")
         let imageView = UIImageView(image: backgroundImage)
         self.tableView.backgroundView = imageView
         tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
@@ -58,12 +69,13 @@ class ViewController: UITableViewController{
             
             laws.append(obj)
         }
-        
+        filteredLaws = laws
         tableView.reloadData()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return laws.count
+                   return self.filteredLaws.count
+        
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
@@ -72,12 +84,25 @@ class ViewController: UITableViewController{
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let law = laws[indexPath.row]
         
+        
+        var law = filteredLaws[indexPath.row]
         cell.textLabel?.text = law["title"]
         cell.detailTextLabel?.text = law["description"]
         return cell
     }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        if searchController.searchBar.text! == "" {
+            filteredLaws = laws
+        }
+        else{
+            filteredLaws = laws.filter({($0["title"]?.lowercased().contains(searchController.searchBar.text!.lowercased()))!})
+        }
+        
+        self.tableView.reloadData()
+    }
+    
     
     func showError() {
         let ac = UIAlertController(title: "Loading error", message: "There was a problem loading; please try again.", preferredStyle: .alert)

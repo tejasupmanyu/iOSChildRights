@@ -29,7 +29,7 @@ class QuizLaunchViewController: UIViewController {
         perform(#selector(showNavController), with: nil, afterDelay: 1)
         
         
-    }
+}
     
 //    func playSound()
 //        

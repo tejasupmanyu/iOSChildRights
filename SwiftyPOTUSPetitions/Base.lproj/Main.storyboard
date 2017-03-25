@@ -6,205 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
-        <scene sceneID="i0u-Jl-9yg">
-            <objects>
-                <viewController id="cMc-jW-dp4" customClass="HomeViewController" customModule="SwiftyPOTUSPetitions" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="92C-ed-Tjw"/>
-                        <viewControllerLayoutGuide type="bottom" id="RpG-qr-czo"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="69l-gI-wNo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="board_crop_boy" translatesAutoresizingMaskIntoConstraints="NO" id="Njj-eO-5I1">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTM-Vi-pv4" customClass="RoundButton" customModule="SwiftyPOTUSPetitions" customModuleProvider="target">
-                                <rect key="frame" x="56" y="333" width="100" height="98.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
-                                <state key="normal" title="Acts">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="50P-h5-A6A" kind="show" id="03A-BK-c8C"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJz-4l-Ukb" customClass="RoundButton" customModule="SwiftyPOTUSPetitions" customModuleProvider="target">
-                                <rect key="frame" x="136" y="566" width="100" height="98.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
-                                <state key="normal" title="Credits">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="100"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="32v-sq-WPc" kind="show" id="NTz-tX-GJN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gB-nJ-sjP" customClass="RoundButton" customModule="SwiftyPOTUSPetitions" customModuleProvider="target">
-                                <rect key="frame" x="219" y="333" width="100" height="100"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="s4h-IY-GdF"/>
-                                    <constraint firstAttribute="height" constant="100" id="vx2-1G-bow"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                <state key="normal" title="Case Studies">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="yUZ-UN-Mz9" kind="show" id="bHl-E1-HJv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQl-h7-vFm" customClass="RoundButton" customModule="SwiftyPOTUSPetitions" customModuleProvider="target">
-                                <rect key="frame" x="56" y="497" width="100" height="98.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                <state key="normal" title="Stakeholders">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="Lra-9K-1FQ" kind="show" id="kOp-so-cm1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woh-Nb-868" customClass="RoundButton" customModule="SwiftyPOTUSPetitions" customModuleProvider="target">
-                                <rect key="frame" x="219" y="497" width="100" height="98.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
-                                <state key="normal" title="Quiz">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="Cug-DA-Rqk" kind="show" id="qgU-Mc-4wG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnR-Uu-Xcr" customClass="RoundButton" customModule="SwiftyPOTUSPetitions" customModuleProvider="target">
-                                <rect key="frame" x="137" y="416" width="100" height="98.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
-                                <state key="normal" title="More">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="PressButton:" destination="cMc-jW-dp4" eventType="touchUpInside" id="Ujf-N4-Wru"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="3gB-nJ-sjP" firstAttribute="top" secondItem="bTM-Vi-pv4" secondAttribute="top" id="5Z1-hC-KPx"/>
-                            <constraint firstItem="sQl-h7-vFm" firstAttribute="leading" secondItem="69l-gI-wNo" secondAttribute="leadingMargin" constant="40" id="5g6-XN-jTw"/>
-                            <constraint firstItem="woh-Nb-868" firstAttribute="top" secondItem="3gB-nJ-sjP" secondAttribute="bottom" constant="24" id="7ZU-9h-uCa"/>
-                            <constraint firstItem="sQl-h7-vFm" firstAttribute="top" secondItem="woh-Nb-868" secondAttribute="top" id="CG6-r0-93z"/>
-                            <constraint firstItem="3gB-nJ-sjP" firstAttribute="leading" secondItem="bTM-Vi-pv4" secondAttribute="trailing" constant="63" id="Doq-Op-DUW"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3gB-nJ-sjP" secondAttribute="trailing" constant="40" id="Ead-Lv-d4t"/>
-                            <constraint firstItem="3gB-nJ-sjP" firstAttribute="top" secondItem="92C-ed-Tjw" secondAttribute="bottom" constant="313" id="MPy-6I-J3j"/>
-                            <constraint firstItem="sQl-h7-vFm" firstAttribute="baseline" secondItem="woh-Nb-868" secondAttribute="firstBaseline" id="OcM-uF-IOM"/>
-                            <constraint firstItem="RpG-qr-czo" firstAttribute="top" secondItem="sQl-h7-vFm" secondAttribute="bottom" constant="66" id="U2q-zN-ROk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="woh-Nb-868" secondAttribute="trailing" constant="40" id="WLm-gd-snN"/>
-                            <constraint firstItem="sQl-h7-vFm" firstAttribute="firstBaseline" secondItem="woh-Nb-868" secondAttribute="baseline" id="YL8-Zj-Ees"/>
-                            <constraint firstItem="3gB-nJ-sjP" firstAttribute="leading" secondItem="woh-Nb-868" secondAttribute="leading" id="eSW-4W-9YY"/>
-                            <constraint firstItem="sQl-h7-vFm" firstAttribute="trailing" secondItem="bTM-Vi-pv4" secondAttribute="trailing" id="lAC-YU-Pe3"/>
-                            <constraint firstItem="3gB-nJ-sjP" firstAttribute="firstBaseline" secondItem="bTM-Vi-pv4" secondAttribute="baseline" id="lJM-Ty-9Lv"/>
-                            <constraint firstItem="bTM-Vi-pv4" firstAttribute="leading" secondItem="69l-gI-wNo" secondAttribute="leadingMargin" constant="40" id="tkp-s7-ZA8"/>
-                            <constraint firstItem="3gB-nJ-sjP" firstAttribute="baseline" secondItem="bTM-Vi-pv4" secondAttribute="firstBaseline" id="xmS-xu-2EA"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="XO9-ao-Jse"/>
-                    <connections>
-                        <outlet property="PressButton" destination="YnR-Uu-Xcr" id="1et-Bt-xLi"/>
-                        <outlet property="actsButton" destination="bTM-Vi-pv4" id="eK3-bm-qg3"/>
-                        <outlet property="caseButton" destination="3gB-nJ-sjP" id="WaI-sa-Eu0"/>
-                        <outlet property="creditsButton" destination="xJz-4l-Ukb" id="pEE-ll-pFj"/>
-                        <outlet property="quizButton" destination="woh-Nb-868" id="U41-Yg-Emd"/>
-                        <outlet property="stakeButton" destination="sQl-h7-vFm" id="98E-do-Yg7"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UxY-dq-2Ns" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2237.5999999999999" y="189.3553223388306"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="UcH-UC-wnS">
             <objects>
-                <tableViewController id="50P-h5-A6A" customClass="ViewController" customModule="SwiftyPOTUSPetitions" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ActsList" id="50P-h5-A6A" customClass="ViewController" customModule="HackathonPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="fFy-uP-nGd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -245,12 +54,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6nR-aV-QjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2984.8000000000002" y="190.25487256371815"/>
+            <point key="canvasLocation" x="4284" y="174.96251874062969"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="FXz-SM-Iun">
             <objects>
-                <viewController id="WIV-tK-Vi1" customClass="QuizViewController" customModule="SwiftyPOTUSPetitions" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WIV-tK-Vi1" customClass="QuizViewController" customModule="HackathonPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cVw-jq-vtt"/>
                         <viewControllerLayoutGuide type="bottom" id="MNh-no-dIr"/>
@@ -260,13 +69,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="score" translatesAutoresizingMaskIntoConstraints="NO" id="wqG-B4-nbn">
-                                <rect key="frame" x="67" y="38" width="305" height="101"/>
+                                <rect key="frame" x="67" y="82" width="305" height="101"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="101" id="LeU-fn-ZQN"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="number" translatesAutoresizingMaskIntoConstraints="NO" id="LKK-Gf-0g1">
-                                <rect key="frame" x="0.0" y="164" width="375" height="206"/>
+                                <rect key="frame" x="0.0" y="208" width="375" height="162"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="thL-eb-Yf6">
                                 <rect key="frame" x="0.0" y="500" width="203" height="114"/>
@@ -315,7 +124,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBA-fH-2RS">
-                                <rect key="frame" x="138" y="62" width="152" height="53"/>
+                                <rect key="frame" x="138" y="106" width="152" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="152" id="JgV-a0-UoE"/>
                                 </constraints>
@@ -356,12 +165,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gXx-30-BeP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3732" y="2325.7871064467768"/>
+            <point key="canvasLocation" x="5150" y="2326"/>
         </scene>
         <!--Score View Controller-->
         <scene sceneID="nmQ-qK-1eg">
             <objects>
-                <viewController storyboardIdentifier="showScore" id="xKB-Pk-n8k" customClass="ScoreViewController" customModule="SwiftyPOTUSPetitions" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="showScore" id="xKB-Pk-n8k" customClass="ScoreViewController" customModule="HackathonPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cMX-mw-3nI"/>
                         <viewControllerLayoutGuide type="bottom" id="W8O-Tc-Hgt"/>
@@ -400,9 +209,6 @@
                                 <state key="normal" title="Home" backgroundImage="orange">
                                     <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="cMc-jW-dp4" kind="show" id="bhE-qX-9R4"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="high" translatesAutoresizingMaskIntoConstraints="NO" id="jDo-2L-elw">
                                 <rect key="frame" x="132" y="189" width="100" height="100"/>
@@ -464,12 +270,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQJ-zE-a0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4477.6000000000004" y="2326.6866566716644"/>
+            <point key="canvasLocation" x="6036" y="2326"/>
         </scene>
         <!--Case Table View Controller-->
         <scene sceneID="whu-Xe-5r5">
             <objects>
-                <tableViewController id="yUZ-UN-Mz9" customClass="CaseTableViewController" customModule="SwiftyPOTUSPetitions" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CasesList" id="yUZ-UN-Mz9" customClass="CaseTableViewController" customModule="HackathonPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="v7y-n6-gj8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -509,12 +315,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rNd-hv-blj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2985" y="897"/>
+            <point key="canvasLocation" x="4284" y="901"/>
         </scene>
         <!--Case Details View Controller-->
         <scene sceneID="Z4y-3Q-fA8">
             <objects>
-                <viewController storyboardIdentifier="Case" id="Qtt-Xu-Ohj" customClass="CaseDetailsViewController" customModule="SwiftyPOTUSPetitions" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Case" id="Qtt-Xu-Ohj" customClass="CaseDetailsViewController" customModule="HackathonPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6P2-XQ-LyA"/>
                         <viewControllerLayoutGuide type="bottom" id="nWv-G2-Ajx"/>
@@ -553,12 +359,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fd-4R-BeU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3732" y="900.89955022488766"/>
+            <point key="canvasLocation" x="5150" y="901"/>
         </scene>
         <!--Contact Table View Controller-->
         <scene sceneID="myb-d0-f1x">
             <objects>
-                <tableViewController id="Lra-9K-1FQ" customClass="ContactTableViewController" customModule="SwiftyPOTUSPetitions" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ContactsList" id="Lra-9K-1FQ" customClass="ContactTableViewController" customModule="HackathonPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="uSw-1a-GSw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -599,12 +405,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i4g-7B-EKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2988" y="1601"/>
+            <point key="canvasLocation" x="4284" y="1635"/>
         </scene>
         <!--Contact Details View Controller-->
         <scene sceneID="zf6-Pt-IGk">
             <objects>
-                <viewController storyboardIdentifier="Contact" id="AEg-U5-xVx" customClass="ContactDetailsViewController" customModule="SwiftyPOTUSPetitions" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Contact" id="AEg-U5-xVx" customClass="ContactDetailsViewController" customModule="HackathonPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tn7-7F-5t0"/>
                         <viewControllerLayoutGuide type="bottom" id="Iiv-Il-dNx"/>
@@ -652,12 +458,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ug8-Pr-9d3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3732" y="1605.2473763118442"/>
+            <point key="canvasLocation" x="5150" y="1635"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="AIR-XG-bTW">
             <objects>
-                <viewController storyboardIdentifier="Detail" id="h47-y9-EDp" customClass="DetailViewController" customModule="SwiftyPOTUSPetitions" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Detail" id="h47-y9-EDp" customClass="DetailViewController" customModule="HackathonPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0rH-Oi-zRz"/>
                         <viewControllerLayoutGuide type="bottom" id="IHQ-9P-JUN"/>
@@ -728,35 +534,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QkF-WB-phh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3709.5999999999999" y="189.3553223388306"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="tva-ig-dt0">
-            <objects>
-                <navigationController storyboardIdentifier="NavController" automaticallyAdjustsScrollViewInsets="NO" id="iPb-61-mde" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="mostRecent" id="VWu-tu-jGt"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Is-Aq-cdV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="23"/>
-                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="cMc-jW-dp4" kind="relationship" relationship="rootViewController" id="wff-3Z-7zT"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0lm-Nv-Bf1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1458" y="189"/>
+            <point key="canvasLocation" x="5151" y="175"/>
         </scene>
         <!--Quiz Launch View Controller-->
         <scene sceneID="m4O-Jr-oP9">
             <objects>
-                <viewController id="Cug-DA-Rqk" customClass="QuizLaunchViewController" customModule="SwiftyPOTUSPetitions" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Cug-DA-Rqk" customClass="QuizLaunchViewController" customModule="HackathonPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ASh-hC-slD"/>
                         <viewControllerLayoutGuide type="bottom" id="imP-do-Ill"/>
@@ -778,22 +561,145 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P8S-Jw-5Z5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2985" y="2326"/>
+            <point key="canvasLocation" x="4284" y="2326"/>
+        </scene>
+        <!--Carousel Home View Controller-->
+        <scene sceneID="N1W-W5-U3w">
+            <objects>
+                <viewController storyboardIdentifier="CaraouselView" id="u7r-mF-2ej" customClass="CarouselHomeViewController" customModule="HackathonPrototype" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FX5-1c-wFJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="pTT-7c-Eqn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e8m-4X-vrH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeScreen" translatesAutoresizingMaskIntoConstraints="NO" id="8gu-X8-tlE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8D-CW-6Pd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="JEB-66-ffL">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="60Y-3r-10l">
+                                            <rect key="frame" x="0.0" y="101" width="375" height="491"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="491" id="0pR-5m-gAK"/>
+                                            </constraints>
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="10" id="EDM-Ix-8V1">
+                                                <size key="itemSize" width="280" height="430"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ThumbNail" id="IG2-qy-Mjq" customClass="CarouselCollectionViewCell" customModule="HackathonPrototype" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="30.5" width="280" height="430"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="430"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeScreen" translatesAutoresizingMaskIntoConstraints="NO" id="DU8-58-NEg">
+                                                                <rect key="frame" x="0.0" y="0.0" width="280" height="430"/>
+                                                            </imageView>
+                                                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="58y-PJ-duT">
+                                                                <rect key="frame" x="0.0" y="350" width="280" height="80"/>
+                                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9Sb-0k-jcn">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="80"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Acts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8B-O8-gdS">
+                                                                            <rect key="frame" x="14" y="15" width="251" height="51"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </view>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="80" id="TGk-OO-yzH"/>
+                                                                </constraints>
+                                                                <blurEffect style="extraLight"/>
+                                                            </visualEffectView>
+                                                        </subviews>
+                                                    </view>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="58y-PJ-duT" secondAttribute="bottom" id="1MW-Yp-uWk"/>
+                                                        <constraint firstAttribute="bottom" secondItem="DU8-58-NEg" secondAttribute="bottom" id="NbC-ux-I0v"/>
+                                                        <constraint firstItem="58y-PJ-duT" firstAttribute="leading" secondItem="IG2-qy-Mjq" secondAttribute="leading" id="Tr7-db-foz"/>
+                                                        <constraint firstAttribute="trailing" secondItem="58y-PJ-duT" secondAttribute="trailing" id="cJY-ov-JIa"/>
+                                                        <constraint firstItem="DU8-58-NEg" firstAttribute="top" secondItem="IG2-qy-Mjq" secondAttribute="top" id="kmj-Uh-sKg"/>
+                                                        <constraint firstAttribute="trailing" secondItem="DU8-58-NEg" secondAttribute="trailing" id="x8L-cR-ny0"/>
+                                                        <constraint firstItem="DU8-58-NEg" firstAttribute="leading" secondItem="IG2-qy-Mjq" secondAttribute="leading" id="xQK-F2-ceN"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="cellBackground" destination="DU8-58-NEg" id="TYo-xl-dUT"/>
+                                                        <outlet property="cellLabel" destination="M8B-O8-gdS" id="qge-H1-fSr"/>
+                                                    </connections>
+                                                </collectionViewCell>
+                                            </cells>
+                                            <connections>
+                                                <outlet property="dataSource" destination="u7r-mF-2ej" id="5YV-Z3-V2V"/>
+                                                <outlet property="delegate" destination="u7r-mF-2ej" id="RPf-ut-wFP"/>
+                                            </connections>
+                                        </collectionView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="60Y-3r-10l" firstAttribute="leading" secondItem="JEB-66-ffL" secondAttribute="leading" id="1JU-qe-OFt"/>
+                                        <constraint firstAttribute="bottom" secondItem="60Y-3r-10l" secondAttribute="bottom" constant="75" id="MKP-Qd-Ltq"/>
+                                        <constraint firstAttribute="trailing" secondItem="60Y-3r-10l" secondAttribute="trailing" id="fSH-VO-XGL"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="d8D-CW-6Pd" secondAttribute="trailing" id="76g-Vc-CVC"/>
+                            <constraint firstItem="8gu-X8-tlE" firstAttribute="leading" secondItem="e8m-4X-vrH" secondAttribute="leading" id="7nf-Om-erw"/>
+                            <constraint firstItem="8gu-X8-tlE" firstAttribute="top" secondItem="e8m-4X-vrH" secondAttribute="top" id="BAg-TE-THu"/>
+                            <constraint firstAttribute="trailing" secondItem="8gu-X8-tlE" secondAttribute="trailing" id="Tpf-od-SAk"/>
+                            <constraint firstItem="pTT-7c-Eqn" firstAttribute="top" secondItem="d8D-CW-6Pd" secondAttribute="bottom" id="V7f-MB-XCI"/>
+                            <constraint firstItem="pTT-7c-Eqn" firstAttribute="top" secondItem="8gu-X8-tlE" secondAttribute="bottom" id="arZ-Yn-YC0"/>
+                            <constraint firstItem="d8D-CW-6Pd" firstAttribute="leading" secondItem="e8m-4X-vrH" secondAttribute="leading" id="oE6-UX-PBZ"/>
+                            <constraint firstItem="d8D-CW-6Pd" firstAttribute="top" secondItem="e8m-4X-vrH" secondAttribute="top" id="qz9-sb-GTR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="S1o-93-mDc"/>
+                    <connections>
+                        <outlet property="BackgroundImage" destination="8gu-X8-tlE" id="sKR-CA-hi4"/>
+                        <outlet property="carouselView" destination="60Y-3r-10l" id="yj1-mo-Q1N"/>
+                        <segue destination="50P-h5-A6A" kind="show" identifier="ActsList" id="Ldg-n7-H62"/>
+                        <segue destination="yUZ-UN-Mz9" kind="show" identifier="CasesList" id="b91-f5-EK0"/>
+                        <segue destination="Lra-9K-1FQ" kind="show" identifier="ContactsList" id="sKK-pa-fvs"/>
+                        <segue destination="Cug-DA-Rqk" kind="show" identifier="QuizStart" id="iMX-Sq-QxV"/>
+                        <segue destination="32v-sq-WPc" kind="show" identifier="CreditsList" id="pAY-qG-PvQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bie-II-t9Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3292" y="174.96251874062969"/>
         </scene>
         <!--Credits View Controller-->
         <scene sceneID="25e-VH-KgN">
             <objects>
-                <tableViewController id="32v-sq-WPc" customClass="CreditsViewController" customModule="SwiftyPOTUSPetitions" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CreditsList" id="32v-sq-WPc" customClass="CreditsViewController" customModule="HackathonPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="76" sectionHeaderHeight="28" sectionFooterHeight="28" id="hf8-Hj-qLx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="200" id="bgJ-g0-F7b" customClass="PeopleTableViewCell" customModule="SwiftyPOTUSPetitions" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="200" id="bgJ-g0-F7b" customClass="PeopleTableViewCell" customModule="HackathonPrototype" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bgJ-g0-F7b" id="STU-bH-kK5">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="7Ha-9j-uVk">
@@ -874,12 +780,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cq2-Fw-LTa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1572" y="1193"/>
+            <point key="canvasLocation" x="1924" y="1415"/>
         </scene>
         <!--Tutorial View Controller-->
         <scene sceneID="PjJ-tS-JyB">
             <objects>
-                <viewController storyboardIdentifier="onBoarding" id="Nnv-V7-HiR" customClass="tutorialViewController" customModule="SwiftyPOTUSPetitions" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onBoarding" id="Nnv-V7-HiR" customClass="tutorialViewController" customModule="HackathonPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eUw-vP-RUr"/>
                         <viewControllerLayoutGuide type="bottom" id="bjL-F1-pTc"/>
@@ -888,7 +794,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRa-lP-70C" customClass="onBoard" customModule="SwiftyPOTUSPetitions" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRa-lP-70C" customClass="onBoard" customModule="HackathonPrototype" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -925,7 +831,7 @@
         <!--Launch View Controller-->
         <scene sceneID="P2d-sT-qK3">
             <objects>
-                <viewController storyboardIdentifier="splashScreen" id="iLx-c4-KyJ" customClass="LaunchViewController" customModule="SwiftyPOTUSPetitions" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="splashScreen" id="iLx-c4-KyJ" customClass="LaunchViewController" customModule="HackathonPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MTx-3Z-PiN"/>
                         <viewControllerLayoutGuide type="bottom" id="hS9-r0-Nhc"/>
@@ -934,56 +840,79 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl" translatesAutoresizingMaskIntoConstraints="NO" id="QlS-Vf-8Fa">
-                                <rect key="frame" x="-7" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag" translatesAutoresizingMaskIntoConstraints="NO" id="QlS-Vf-8Fa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Butterflies &amp; Unicorns" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kME-iP-rhJ">
-                                <rect key="frame" x="16" y="9" width="592" height="220"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="56"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Butterflies &amp; Unicorns" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98E-QV-NEe">
+                                <rect key="frame" x="8" y="-14" width="359" height="119"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="119" id="F5K-FS-nkG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="33"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" A vision by VisionArray" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwl-fx-9wB">
-                                <rect key="frame" x="1" y="468" width="359" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="Stv-Ey-7Xc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="19"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Vision by VisionArray" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAy-iN-IRN">
+                                <rect key="frame" x="58" y="578" width="383" height="119"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="32"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="kME-iP-rhJ" firstAttribute="leading" secondItem="bGS-Jf-CJr" secondAttribute="leading" constant="16" id="ELx-EQ-C64"/>
-                            <constraint firstItem="wwl-fx-9wB" firstAttribute="centerX" secondItem="QlS-Vf-8Fa" secondAttribute="centerX" id="bvQ-Te-Tsf"/>
+                            <constraint firstItem="98E-QV-NEe" firstAttribute="centerX" secondItem="QlS-Vf-8Fa" secondAttribute="centerX" id="44c-Qv-7xa"/>
+                            <constraint firstAttribute="trailing" secondItem="QlS-Vf-8Fa" secondAttribute="trailing" id="7Qg-wp-sL1"/>
+                            <constraint firstItem="98E-QV-NEe" firstAttribute="leading" secondItem="bGS-Jf-CJr" secondAttribute="leadingMargin" constant="-8" id="8YJ-vd-55a"/>
+                            <constraint firstItem="98E-QV-NEe" firstAttribute="top" secondItem="bGS-Jf-CJr" secondAttribute="topMargin" constant="-14" id="AVz-rA-lBi"/>
+                            <constraint firstAttribute="trailing" secondItem="JAy-iN-IRN" secondAttribute="trailing" constant="-66" id="IiA-ia-v1Z"/>
+                            <constraint firstItem="QlS-Vf-8Fa" firstAttribute="top" secondItem="bGS-Jf-CJr" secondAttribute="top" id="K8L-rq-9ps"/>
+                            <constraint firstItem="hS9-r0-Nhc" firstAttribute="top" secondItem="QlS-Vf-8Fa" secondAttribute="bottom" id="Qfg-8y-luF"/>
                             <constraint firstItem="QlS-Vf-8Fa" firstAttribute="bottom" secondItem="hS9-r0-Nhc" secondAttribute="top" id="cVr-bv-61L"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wwl-fx-9wB" secondAttribute="trailing" constant="-1" id="e7e-Ug-zlv"/>
-                            <constraint firstItem="kME-iP-rhJ" firstAttribute="top" secondItem="bGS-Jf-CJr" secondAttribute="top" constant="9" id="faJ-Y2-3XB"/>
-                            <constraint firstItem="hS9-r0-Nhc" firstAttribute="top" secondItem="wwl-fx-9wB" secondAttribute="bottom" constant="143" id="gWk-5q-2jn"/>
-                            <constraint firstItem="wwl-fx-9wB" firstAttribute="leading" secondItem="bGS-Jf-CJr" secondAttribute="leadingMargin" constant="-15" id="icr-ep-J6m"/>
-                            <constraint firstItem="wwl-fx-9wB" firstAttribute="top" secondItem="kME-iP-rhJ" secondAttribute="bottom" constant="239" id="khU-ea-bzd"/>
-                            <constraint firstAttribute="trailing" secondItem="kME-iP-rhJ" secondAttribute="trailing" constant="-233" id="mBs-uz-Xzq"/>
+                            <constraint firstItem="JAy-iN-IRN" firstAttribute="top" secondItem="98E-QV-NEe" secondAttribute="bottom" constant="473" id="dK2-q3-Y2A"/>
+                            <constraint firstAttribute="bottom" secondItem="JAy-iN-IRN" secondAttribute="bottom" constant="-30" id="fqv-9Q-D0d"/>
+                            <constraint firstItem="JAy-iN-IRN" firstAttribute="leading" secondItem="bGS-Jf-CJr" secondAttribute="leading" constant="58" id="iE7-ab-TQk"/>
                             <constraint firstItem="QlS-Vf-8Fa" firstAttribute="top" secondItem="bGS-Jf-CJr" secondAttribute="top" id="pXN-jg-9yQ"/>
-                            <constraint firstItem="QlS-Vf-8Fa" firstAttribute="leading" secondItem="bGS-Jf-CJr" secondAttribute="leadingMargin" constant="-23" id="whr-IV-tEh"/>
+                            <constraint firstItem="QlS-Vf-8Fa" firstAttribute="leading" secondItem="bGS-Jf-CJr" secondAttribute="leading" id="tc7-kg-65E"/>
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="iPb-61-mde" kind="showDetail" identifier="splashScreen" action="showViewController:sender:" id="ISI-EC-Pki"/>
+                        <segue destination="xrh-pc-WAz" kind="show" identifier="splashScreen" id="DSZ-7R-tu4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tcE-Vu-X4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="604" y="188"/>
+            <point key="canvasLocation" x="1473" y="189"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LrR-xf-4K5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xrh-pc-WAz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="d7R-G5-kSA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="u7r-mF-2ej" kind="relationship" relationship="rootViewController" id="uhC-e2-JaP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sBO-ih-Uxn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2352.8000000000002" y="174.96251874062969"/>
         </scene>
     </scenes>
     <resources>
+        <image name="HomeScreen" width="216" height="325"/>
         <image name="background" width="375" height="667"/>
-        <image name="board_crop_boy" width="239" height="339"/>
         <image name="cloud" width="300" height="175"/>
+        <image name="flag" width="586" height="640"/>
         <image name="g1" width="540" height="960"/>
         <image name="g5" width="540" height="960"/>
-        <image name="girl" width="1024" height="1024"/>
         <image name="gr" width="960" height="540"/>
         <image name="high" width="110" height="110"/>
         <image name="me" width="540" height="287"/>
@@ -992,7 +921,4 @@
         <image name="quiz" width="500" height="250"/>
         <image name="score" width="149" height="50"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="bhE-qX-9R4"/>
-    </inferredMetricsTieBreakers>
 </document>
