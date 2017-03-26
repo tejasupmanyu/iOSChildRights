@@ -17,14 +17,25 @@ class ActDetailsViewController: UITableViewController {
     var indexOfCell = 0
     var viewImage = ["hands","girl_flower","gr1"]
     var fontSize: CGFloat = 19.0
+    var effect: UIVisualEffect!
     
+    @IBOutlet weak var VisualEffectView: UIVisualEffectView!
+    @IBOutlet var SettingsPopUp: UIView!
     @IBOutlet weak var LightSwitch: UISwitch!
     @IBOutlet weak var FontSlider: UISlider!
     
-    @IBAction func FontSizeSlider(_ sender: Any){
+    @IBAction func SettingsButton(_ sender: UIButton) {
+        animateIn()
+    }
+    @IBAction func DismissPopUp(_ sender: UIButton) {
+        animateOut()
+        VisualEffectView.effect = nil
+    }
+    @IBAction func FontSizeSlider(_ sender: UISlider) {
         fontSize = CGFloat(FontSlider.value)
         tableView.reloadData()
     }
+    
     @IBOutlet weak var NightModeLabel: UILabel!
     @IBOutlet weak var HeaderImageView: UIImageView!
     
@@ -45,8 +56,16 @@ class ActDetailsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         guard detailItem != nil else { return }
+        
+        effect = VisualEffectView.effect
+        VisualEffectView.effect = nil
+        SettingsPopUp.layer.cornerRadius = 10
+        
+        
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(share(sender:)))
         HeaderImageView.image = UIImage(named: viewImage[indexOfCell])
+        
         LightSwitch.isOn = false
         
         if let title = detailItem["title"]{
@@ -70,6 +89,30 @@ class ActDetailsViewController: UITableViewController {
     }
     
    
+    func animateIn() {
+        self.view.addSubview(SettingsPopUp)
+        SettingsPopUp.center = self.HeaderImageView.center
+        
+        SettingsPopUp.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+        SettingsPopUp.alpha = 0
+        
+        UIView.animate(withDuration: 0.4, animations: {self.VisualEffectView.effect = self.effect
+            self.SettingsPopUp.alpha = 1
+            self.SettingsPopUp.transform = CGAffineTransform.identity
+        })
+    }
+    
+    func animateOut()
+    {
+        UIView.animate(withDuration: 0.3, animations: {self.SettingsPopUp.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+            self.SettingsPopUp.alpha = 0
+        }, completion: {(success: Bool) in self.SettingsPopUp.removeFromSuperview()})
+    }
+    
+    
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

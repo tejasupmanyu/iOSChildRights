@@ -17,9 +17,52 @@ class CaseStudyDetailsTableViewController: UITableViewController {
     @IBOutlet weak var HeaderImageView: UIImageView!
     var viewImage = ["boys","girl_flower","board_crop_boy"]
     
+    var fontSize: CGFloat = 19.0
+    var effect: UIVisualEffect!
+    
+    @IBOutlet weak var VisualEffectView: UIVisualEffectView!
+    @IBOutlet var SettingsPopUp: UIView!
+    @IBOutlet weak var LightSwitch: UISwitch!
+    @IBOutlet weak var FontSlider: UISlider!
+    
+    @IBAction func SettingsButton(_ sender: UIButton) {
+        animateIn()
+    }
+    @IBAction func DismissPopUp(_ sender: UIButton) {
+        animateOut()
+        VisualEffectView.effect = nil
+    }
+    @IBAction func FontSizeSlider(_ sender: UISlider) {
+        fontSize = CGFloat(FontSlider.value)
+        tableView.reloadData()
+    }
+    
+    @IBOutlet weak var NightModeLabel: UILabel!
+        
+    @IBAction func LightSwitch(_ sender: UISwitch) {
+        if sender.isOn{
+            tableView.reloadData()
+            print("did it change?")
+            
+        }
+        else
+        {
+            print("Turned OFF")
+            tableView.reloadData()
+            UIView.animate(withDuration: 0.5, animations: { self.NightModeLabel.alpha = 1})
+        }
+    }
+
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        effect = VisualEffectView.effect
+        VisualEffectView.effect = nil
+        SettingsPopUp.layer.cornerRadius = 10
+
         guard detailItem != nil else { return }
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(share(sender:)))
         HeaderImageView.image = UIImage(named: viewImage[indexOfCell])
@@ -33,7 +76,28 @@ class CaseStudyDetailsTableViewController: UITableViewController {
 
 
             }
+    
+    func animateIn() {
+        self.view.addSubview(SettingsPopUp)
+        SettingsPopUp.center = self.HeaderImageView.center
+        
+        SettingsPopUp.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+        SettingsPopUp.alpha = 0
+        
+        UIView.animate(withDuration: 0.4, animations: {self.VisualEffectView.effect = self.effect
+            self.SettingsPopUp.alpha = 1
+            self.SettingsPopUp.transform = CGAffineTransform.identity
+        })
+    }
+    
+    func animateOut()
+    {
+        UIView.animate(withDuration: 0.3, animations: {self.SettingsPopUp.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+            self.SettingsPopUp.alpha = 0
+        }, completion: {(success: Bool) in self.SettingsPopUp.removeFromSuperview()})
+    }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -57,7 +121,25 @@ class CaseStudyDetailsTableViewController: UITableViewController {
         cell.CellHeaderLabel.text? = Headings[indexPath.row]
         cell.CellTextView.text? = texts[indexPath.row]
         
-        return cell
+        // change fontSize According to slider
+        let defaultFont = UIFont(name: "AvenirNext-Regular", size: 19.0)
+        cell.CellTextView.font = UIFont(name: (defaultFont!.fontName), size: fontSize)
+        
+        if LightSwitch.isOn{
+            cell.backgroundColor = UIColor.black
+            cell.CellTextView.backgroundColor = UIColor.black
+            cell.CellTextView.textColor = UIColor.white
+            return cell
+        }
+        else
+        {
+            cell.backgroundColor = UIColor.white
+            cell.CellTextView.backgroundColor = UIColor.white
+            cell.CellTextView.textColor = UIColor.black
+            return cell
+        }
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
