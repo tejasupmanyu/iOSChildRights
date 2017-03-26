@@ -55,7 +55,10 @@ class ContactTableViewController: UITableViewController, UISearchResultsUpdating
             let name = law["name"].stringValue
             let address = law["address"].stringValue
             let details = law["details"].stringValue
-            let obj = ["name":name,"address":address,"details":details]
+            let lat = law["lattitude"].stringValue
+            let long = law["longitude"].stringValue
+            let obj = ["name":name,"address":address,"details":details,"lattitude":lat,"longitude":long]
+            
             
             contacts.append(obj)
         }
@@ -111,10 +114,10 @@ class ContactTableViewController: UITableViewController, UISearchResultsUpdating
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "Contact") as? ContactDetailsViewController {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "ContactDetails") as? ContactDetailsTableViewController {
             // 2: success! Set its property
             vc.detailItem = contacts[indexPath.row]
-            
+            vc.indexOfCell = indexPath.row
             // 3: now push it onto the navigation controller
             navigationController?.pushViewController(vc, animated: true)
         }

@@ -17,14 +17,14 @@
 		D62AAD951E5CA8200074BFBA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AAD941E5CA8200074BFBA /* SwiftyJSON.swift */; };
 		D636EFF01E74718A0089253B /* sampleLaw.json in Resources */ = {isa = PBXBuildFile; fileRef = D636EFEF1E74718A0089253B /* sampleLaw.json */; };
 		D645A25A1E76737F002D8346 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645A2591E76737F002D8346 /* LaunchViewController.swift */; };
+		D65A4D481E87A297008781DA /* ContactDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A4D471E87A297008781DA /* ContactDetailsTableViewController.swift */; };
+		D65A4D4B1E87B433008781DA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D65A4D4A1E87B433008781DA /* MapKit.framework */; };
 		D65BF2521E7A81AC00014092 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65BF2511E7A81AC00014092 /* CreditsViewController.swift */; };
 		D65BF2561E7A92CF00014092 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65BF2551E7A92CF00014092 /* PeopleTableViewCell.swift */; };
 		D68DB52B1E86D9DB00B47D56 /* ActDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68DB52A1E86D9DB00B47D56 /* ActDetailsViewController.swift */; };
 		D68DB52D1E86DBA500B47D56 /* ActDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68DB52C1E86DBA500B47D56 /* ActDetailsTableViewCell.swift */; };
 		D6A6C6A41E76CCAC009EF39A /* CaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6C6A31E76CCAC009EF39A /* CaseTableViewController.swift */; };
 		D6A6C6A61E76CCC2009EF39A /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6C6A51E76CCC2009EF39A /* ContactTableViewController.swift */; };
-		D6A6C6A81E76CCFB009EF39A /* CaseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6C6A71E76CCFB009EF39A /* CaseDetailsViewController.swift */; };
-		D6A6C6AA1E76CD0B009EF39A /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6C6A91E76CD0B009EF39A /* ContactDetailsViewController.swift */; };
 		D6A6C6AD1E76CFC5009EF39A /* sampleCases.json in Resources */ = {isa = PBXBuildFile; fileRef = D6A6C6AB1E76CFC5009EF39A /* sampleCases.json */; };
 		D6A6C6AE1E76CFC5009EF39A /* sampleContacts.json in Resources */ = {isa = PBXBuildFile; fileRef = D6A6C6AC1E76CFC5009EF39A /* sampleContacts.json */; };
 		D6A6C6B01E76DB79009EF39A /* QuizLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6C6AF1E76DB79009EF39A /* QuizLaunchViewController.swift */; };
@@ -67,14 +67,14 @@
 		D62AAD941E5CA8200074BFBA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		D636EFEF1E74718A0089253B /* sampleLaw.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleLaw.json; sourceTree = "<group>"; };
 		D645A2591E76737F002D8346 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		D65A4D471E87A297008781DA /* ContactDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailsTableViewController.swift; sourceTree = "<group>"; };
+		D65A4D4A1E87B433008781DA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D65BF2511E7A81AC00014092 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		D65BF2551E7A92CF00014092 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
 		D68DB52A1E86D9DB00B47D56 /* ActDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActDetailsViewController.swift; sourceTree = "<group>"; };
 		D68DB52C1E86DBA500B47D56 /* ActDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		D6A6C6A31E76CCAC009EF39A /* CaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseTableViewController.swift; sourceTree = "<group>"; };
 		D6A6C6A51E76CCC2009EF39A /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
-		D6A6C6A71E76CCFB009EF39A /* CaseDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseDetailsViewController.swift; sourceTree = "<group>"; };
-		D6A6C6A91E76CD0B009EF39A /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
 		D6A6C6AB1E76CFC5009EF39A /* sampleCases.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleCases.json; sourceTree = "<group>"; };
 		D6A6C6AC1E76CFC5009EF39A /* sampleContacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleContacts.json; sourceTree = "<group>"; };
 		D6A6C6AF1E76DB79009EF39A /* QuizLaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizLaunchViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D65A4D4B1E87B433008781DA /* MapKit.framework in Frameworks */,
 				D6A8C7CC1E77ADB700704C42 /* PaperOnboarding.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +108,7 @@
 				D6A8C7CB1E77ADB700704C42 /* PaperOnboarding.framework */,
 				D62AAD811E5CA3A70074BFBA /* SwiftyPOTUSPetitions */,
 				D62AAD801E5CA3A70074BFBA /* Products */,
+				D65A4D491E87B433008781DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,11 +132,10 @@
 				D6B59FA11E7964F70009DDA0 /* RoundButton.swift */,
 				D6A6C6A31E76CCAC009EF39A /* CaseTableViewController.swift */,
 				D6A6C6A51E76CCC2009EF39A /* ContactTableViewController.swift */,
+				D65A4D471E87A297008781DA /* ContactDetailsTableViewController.swift */,
 				D68DB52A1E86D9DB00B47D56 /* ActDetailsViewController.swift */,
 				D68DB52C1E86DBA500B47D56 /* ActDetailsTableViewCell.swift */,
-				D6A6C6A71E76CCFB009EF39A /* CaseDetailsViewController.swift */,
 				D612A9FF1E871353003E6E04 /* CaseStudyDetailsTableViewController.swift */,
-				D6A6C6A91E76CD0B009EF39A /* ContactDetailsViewController.swift */,
 				D6A6C6AF1E76DB79009EF39A /* QuizLaunchViewController.swift */,
 				D6A6C6B11E76DC7C009EF39A /* QuizViewController.swift */,
 				D60CE7511E7991B5002AA3FB /* ScoreViewController.swift */,
@@ -153,6 +154,14 @@
 				D6E650CE1E7710EA00F5A61B /* nar.mp3 */,
 			);
 			path = SwiftyPOTUSPetitions;
+			sourceTree = "<group>";
+		};
+		D65A4D491E87B433008781DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D65A4D4A1E87B433008781DA /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +199,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 2CY38GJLA6;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -236,7 +250,6 @@
 			files = (
 				D6F3D28C1E858B4E0072BF1B /* CarouselCollectionViewCell.swift in Sources */,
 				D6A8C7D41E77B33E00704C42 /* tutorialViewController.swift in Sources */,
-				D6A6C6AA1E76CD0B009EF39A /* ContactDetailsViewController.swift in Sources */,
 				D6F3D28A1E8581180072BF1B /* CarouselHomeViewController.swift in Sources */,
 				D65BF2561E7A92CF00014092 /* PeopleTableViewCell.swift in Sources */,
 				D6A6C6A41E76CCAC009EF39A /* CaseTableViewController.swift in Sources */,
@@ -248,7 +261,7 @@
 				D6B59FA21E7964F70009DDA0 /* RoundButton.swift in Sources */,
 				D645A25A1E76737F002D8346 /* LaunchViewController.swift in Sources */,
 				D62AAD851E5CA3A70074BFBA /* ViewController.swift in Sources */,
-				D6A6C6A81E76CCFB009EF39A /* CaseDetailsViewController.swift in Sources */,
+				D65A4D481E87A297008781DA /* ContactDetailsTableViewController.swift in Sources */,
 				D68DB52B1E86D9DB00B47D56 /* ActDetailsViewController.swift in Sources */,
 				D6A6C6A61E76CCC2009EF39A /* ContactTableViewController.swift in Sources */,
 				D6A8C7D21E77B24800704C42 /* onBoard.swift in Sources */,

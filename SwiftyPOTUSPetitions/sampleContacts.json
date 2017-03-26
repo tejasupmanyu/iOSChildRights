@@ -3,18 +3,24 @@
             "name"      : "Bacche Bachao Agency",
             "address"   :"New Delhi",
             "details"   : "someone@gmail.com",
+            "lattitude":"37.33182",
+            "longitude":"-122.03118",
             },
 
             {
             "name"      : "Nigga Protection Organisation",
             "address"    : "Orissa",
             "details"    : "someone@xyz.com",
+            "lattitude":"37.0696",
+            "longitude":"-122.3696",
             },
 
             {
             "name"      : "Wildlife of children protection",
             "address"    : "Haridwar",
             "details"    : "nigga@nigga.io",
+            "lattitude":"28.644800",
+            "longitude":" 77.216721",
             }]
 
 
