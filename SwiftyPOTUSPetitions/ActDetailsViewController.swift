@@ -83,6 +83,7 @@ class ActDetailsViewController: UITableViewController {
                 }
                 
             }
+            navigationItem.title = title
         }
 
         

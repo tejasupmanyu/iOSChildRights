@@ -72,10 +72,11 @@ class CaseStudyDetailsTableViewController: UITableViewController {
                 texts = [story]
                 Headings = [title]
             }
+            navigationItem.title = title
         }
 
 
-            }
+    }
     
     func animateIn() {
         self.view.addSubview(SettingsPopUp)
