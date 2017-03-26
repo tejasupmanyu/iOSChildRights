@@ -15,17 +15,40 @@ class ActDetailsViewController: UITableViewController {
     var texts : [String]!
     var Headings : [String]!
     var indexOfCell = 0
-    var viewImage = ["hands","girl_flower","fr1"]
-
+    var viewImage = ["hands","girl_flower","gr1"]
+    var fontSize: CGFloat = 19.0
     
+    @IBOutlet weak var LightSwitch: UISwitch!
+    @IBOutlet weak var FontSlider: UISlider!
+    
+    @IBAction func FontSizeSlider(_ sender: Any){
+        fontSize = CGFloat(FontSlider.value)
+        tableView.reloadData()
+    }
+    @IBOutlet weak var NightModeLabel: UILabel!
     @IBOutlet weak var HeaderImageView: UIImageView!
     
+    @IBAction func LightSwitch(_ sender: UISwitch) {
+        if sender.isOn{
+           tableView.reloadData()
+           print("did it change?")
+           
+        }
+        else
+        {
+            print("Turned OFF")
+            tableView.reloadData()
+            UIView.animate(withDuration: 0.5, animations: { self.NightModeLabel.alpha = 1})
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         guard detailItem != nil else { return }
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(share(sender:)))
         HeaderImageView.image = UIImage(named: viewImage[indexOfCell])
+        LightSwitch.isOn = false
+        
         if let title = detailItem["title"]{
             
             if let body = detailItem["description"]{
@@ -68,9 +91,27 @@ class ActDetailsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ActDetailsTableViewCell
         cell.CellHeaderLabel.text? = Headings[indexPath.row]
+        
         cell.CellTextView.text? = texts[indexPath.row]
         
-        return cell
+        // change fontSize According to slider
+        let defaultFont = UIFont(name: "AvenirNext-Regular", size: 19.0)
+        cell.CellTextView.font = UIFont(name: (defaultFont!.fontName), size: fontSize)
+        
+        if LightSwitch.isOn{
+            cell.backgroundColor = UIColor.black
+            cell.CellTextView.backgroundColor = UIColor.black
+            cell.CellTextView.textColor = UIColor.white
+            return cell
+        }
+        else
+        {
+            cell.backgroundColor = UIColor.white
+            cell.CellTextView.backgroundColor = UIColor.white
+            cell.CellTextView.textColor = UIColor.black
+            return cell
+        }
+        
     }
     
     
