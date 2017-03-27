@@ -21,6 +21,8 @@
 		D65A4D4B1E87B433008781DA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D65A4D4A1E87B433008781DA /* MapKit.framework */; };
 		D65BF2521E7A81AC00014092 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65BF2511E7A81AC00014092 /* CreditsViewController.swift */; };
 		D65BF2561E7A92CF00014092 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65BF2551E7A92CF00014092 /* PeopleTableViewCell.swift */; };
+		D67BBE821E89AF5200D09E18 /* PaperOnboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67BBE811E89AF5200D09E18 /* PaperOnboarding.framework */; };
+		D67BBE851E89AF7D00D09E18 /* PaperOnboarding.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D67BBE831E89AF7D00D09E18 /* PaperOnboarding.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D68DB52B1E86D9DB00B47D56 /* ActDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68DB52A1E86D9DB00B47D56 /* ActDetailsViewController.swift */; };
 		D68DB52D1E86DBA500B47D56 /* ActDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68DB52C1E86DBA500B47D56 /* ActDetailsTableViewCell.swift */; };
 		D6A6C6A41E76CCAC009EF39A /* CaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6C6A31E76CCAC009EF39A /* CaseTableViewController.swift */; };
@@ -29,8 +31,6 @@
 		D6A6C6AE1E76CFC5009EF39A /* sampleContacts.json in Resources */ = {isa = PBXBuildFile; fileRef = D6A6C6AC1E76CFC5009EF39A /* sampleContacts.json */; };
 		D6A6C6B01E76DB79009EF39A /* QuizLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6C6AF1E76DB79009EF39A /* QuizLaunchViewController.swift */; };
 		D6A6C6B21E76DC7C009EF39A /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6C6B11E76DC7C009EF39A /* QuizViewController.swift */; };
-		D6A8C7CC1E77ADB700704C42 /* PaperOnboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A8C7CB1E77ADB700704C42 /* PaperOnboarding.framework */; };
-		D6A8C7CD1E77ADB700704C42 /* PaperOnboarding.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D6A8C7CB1E77ADB700704C42 /* PaperOnboarding.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D6A8C7D21E77B24800704C42 /* onBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8C7D11E77B24800704C42 /* onBoard.swift */; };
 		D6A8C7D41E77B33E00704C42 /* tutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8C7D31E77B33E00704C42 /* tutorialViewController.swift */; };
 		D6B59FA21E7964F70009DDA0 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B59FA11E7964F70009DDA0 /* RoundButton.swift */; };
@@ -46,7 +46,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D6A8C7CD1E77ADB700704C42 /* PaperOnboarding.framework in Embed Frameworks */,
+				D67BBE851E89AF7D00D09E18 /* PaperOnboarding.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,6 +70,8 @@
 		D65A4D4A1E87B433008781DA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D65BF2511E7A81AC00014092 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		D65BF2551E7A92CF00014092 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
+		D67BBE811E89AF5200D09E18 /* PaperOnboarding.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PaperOnboarding.framework; path = Carthage/Build/iOS/PaperOnboarding.framework; sourceTree = "<group>"; };
+		D67BBE831E89AF7D00D09E18 /* PaperOnboarding.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PaperOnboarding.framework; path = Carthage/Build/iOS/PaperOnboarding.framework; sourceTree = "<group>"; };
 		D68DB52A1E86D9DB00B47D56 /* ActDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActDetailsViewController.swift; sourceTree = "<group>"; };
 		D68DB52C1E86DBA500B47D56 /* ActDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		D6A6C6A31E76CCAC009EF39A /* CaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseTableViewController.swift; sourceTree = "<group>"; };
@@ -78,7 +80,6 @@
 		D6A6C6AC1E76CFC5009EF39A /* sampleContacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleContacts.json; sourceTree = "<group>"; };
 		D6A6C6AF1E76DB79009EF39A /* QuizLaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizLaunchViewController.swift; sourceTree = "<group>"; };
 		D6A6C6B11E76DC7C009EF39A /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
-		D6A8C7CB1E77ADB700704C42 /* PaperOnboarding.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PaperOnboarding.framework; path = Carthage/Build/iOS/PaperOnboarding.framework; sourceTree = "<group>"; };
 		D6A8C7D11E77B24800704C42 /* onBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = onBoard.swift; sourceTree = "<group>"; };
 		D6A8C7D31E77B33E00704C42 /* tutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tutorialViewController.swift; sourceTree = "<group>"; };
 		D6B59FA11E7964F70009DDA0 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -93,7 +94,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D65A4D4B1E87B433008781DA /* MapKit.framework in Frameworks */,
-				D6A8C7CC1E77ADB700704C42 /* PaperOnboarding.framework in Frameworks */,
+				D67BBE821E89AF5200D09E18 /* PaperOnboarding.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +104,7 @@
 		D62AAD761E5CA3A60074BFBA = {
 			isa = PBXGroup;
 			children = (
-				D6A8C7CB1E77ADB700704C42 /* PaperOnboarding.framework */,
+				D67BBE831E89AF7D00D09E18 /* PaperOnboarding.framework */,
 				D62AAD811E5CA3A70074BFBA /* SwiftyPOTUSPetitions */,
 				D62AAD801E5CA3A70074BFBA /* Products */,
 				D65A4D491E87B433008781DA /* Frameworks */,
@@ -156,6 +157,7 @@
 		D65A4D491E87B433008781DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D67BBE811E89AF5200D09E18 /* PaperOnboarding.framework */,
 				D65A4D4A1E87B433008781DA /* MapKit.framework */,
 			);
 			name = Frameworks;
