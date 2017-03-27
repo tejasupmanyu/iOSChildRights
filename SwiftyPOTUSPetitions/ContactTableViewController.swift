@@ -57,7 +57,11 @@ class ContactTableViewController: UITableViewController, UISearchResultsUpdating
             let details = law["details"].stringValue
             let lat = law["lattitude"].stringValue
             let long = law["longitude"].stringValue
-            let obj = ["name":name,"address":address,"details":details,"lattitude":lat,"longitude":long]
+            let phone = law["phone"].stringValue
+            let mail = law["mail"].stringValue
+            let website = law["website"].stringValue
+            
+            let obj = ["name":name,"address":address,"details":details,"lattitude":lat,"longitude":long,"phone":phone,"website":website,"mail":mail]
             
             
             contacts.append(obj)

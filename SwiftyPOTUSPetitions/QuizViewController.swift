@@ -18,8 +18,8 @@ class QuizViewController: UIViewController {
     var currentQuestion = 0
     var rightAnswerPlacement:UInt32 = 0
     var points = 0
-    var player: AVPlayer?
-    let videoURL = Bundle.main.url(forResource: "bg", withExtension: "mp4")
+//    var player: AVPlayer?
+//    let videoURL = Bundle.main.url(forResource: "bg", withExtension: "mp4")
 
     @IBOutlet weak var backGround: UIImageView!
     @IBOutlet weak var scoreBoard: UILabel!
@@ -38,31 +38,31 @@ class QuizViewController: UIViewController {
         navigationItem.title = "Quiz"
         
         
-        // Do any additional setup after loading the view.
-        
-        player = AVPlayer(url: videoURL!)
-        player?.actionAtItemEnd = .none
-        player?.isMuted = true
-        
-        let playerLayer = AVPlayerLayer(player: player)
-        playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
-        playerLayer.zPosition = -1
-        
-        playerLayer.frame = view.frame
-        
-        view.layer.addSublayer(playerLayer)
-        
-        player?.play()
-        
-        
-        
-        
-        
-        // if video ends, will restart
-        
-        func playerItemDidReachEnd() {
-            player!.seek(to: kCMTimeZero)
-        }
+//        // Do any additional setup after loading the view.
+//        
+//        player = AVPlayer(url: videoURL!)
+//        player?.actionAtItemEnd = .none
+//        player?.isMuted = true
+//        
+//        let playerLayer = AVPlayerLayer(player: player)
+//        playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+//        playerLayer.zPosition = -1
+//        
+//        playerLayer.frame = view.frame
+//        
+//        view.layer.addSublayer(playerLayer)
+//        
+//        player?.play()
+//        
+//        
+//        
+//        
+//        
+//        // if video ends, will restart
+//        
+//        func playerItemDidReachEnd() {
+//            player!.seek(to: kCMTimeZero)
+//        }
         
     
 

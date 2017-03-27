@@ -34,7 +34,6 @@
 		D6A8C7D21E77B24800704C42 /* onBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8C7D11E77B24800704C42 /* onBoard.swift */; };
 		D6A8C7D41E77B33E00704C42 /* tutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8C7D31E77B33E00704C42 /* tutorialViewController.swift */; };
 		D6B59FA21E7964F70009DDA0 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B59FA11E7964F70009DDA0 /* RoundButton.swift */; };
-		D6E2AB831E79C3DE00F69BEF /* bg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D6E2AB821E79C3DE00F69BEF /* bg.mp4 */; };
 		D6E650CF1E7710EA00F5A61B /* nar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D6E650CE1E7710EA00F5A61B /* nar.mp3 */; };
 		D6F3D28A1E8581180072BF1B /* CarouselHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3D2891E8581180072BF1B /* CarouselHomeViewController.swift */; };
 		D6F3D28C1E858B4E0072BF1B /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3D28B1E858B4E0072BF1B /* CarouselCollectionViewCell.swift */; };
@@ -83,7 +82,6 @@
 		D6A8C7D11E77B24800704C42 /* onBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = onBoard.swift; sourceTree = "<group>"; };
 		D6A8C7D31E77B33E00704C42 /* tutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tutorialViewController.swift; sourceTree = "<group>"; };
 		D6B59FA11E7964F70009DDA0 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
-		D6E2AB821E79C3DE00F69BEF /* bg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg.mp4; sourceTree = "<group>"; };
 		D6E650CE1E7710EA00F5A61B /* nar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nar.mp3; sourceTree = "<group>"; };
 		D6F3D2891E8581180072BF1B /* CarouselHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselHomeViewController.swift; sourceTree = "<group>"; };
 		D6F3D28B1E858B4E0072BF1B /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 		D62AAD811E5CA3A70074BFBA /* SwiftyPOTUSPetitions */ = {
 			isa = PBXGroup;
 			children = (
-				D6E2AB821E79C3DE00F69BEF /* bg.mp4 */,
 				D62AAD821E5CA3A70074BFBA /* AppDelegate.swift */,
 				D6A8C7D11E77B24800704C42 /* onBoard.swift */,
 				D6A8C7D31E77B33E00704C42 /* tutorialViewController.swift */,
@@ -236,7 +233,6 @@
 				D62AAD8A1E5CA3A70074BFBA /* Assets.xcassets in Resources */,
 				D6E650CF1E7710EA00F5A61B /* nar.mp3 in Resources */,
 				D62AAD881E5CA3A70074BFBA /* Main.storyboard in Resources */,
-				D6E2AB831E79C3DE00F69BEF /* bg.mp4 in Resources */,
 				D6A6C6AD1E76CFC5009EF39A /* sampleCases.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

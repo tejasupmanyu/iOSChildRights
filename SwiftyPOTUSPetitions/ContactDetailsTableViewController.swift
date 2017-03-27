@@ -9,11 +9,13 @@
 import UIKit
 import MapKit
 import CoreLocation
+import MessageUI
 
 class ContactDetailsTableViewController: UITableViewController {
 
     @IBOutlet var ContactMap: MKMapView!
     
+    @IBOutlet weak var dismissPopUpButton: UIButton!
     @IBOutlet weak var HeaderImageView: UIImageView!
     
     var detailItem: [String: String]!
@@ -30,9 +32,14 @@ class ContactDetailsTableViewController: UITableViewController {
     
     @IBOutlet weak var VisualEffectView: UIVisualEffectView!
     @IBOutlet var SettingsPopUp: UIView!
+    @IBOutlet var ContactsPopup: UIView!
     @IBOutlet weak var LightSwitch: UISwitch!
     @IBOutlet weak var FontSlider: UISlider!
     
+    @IBOutlet weak var dismissContactButton: UIButton!
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var mailLabel: UILabel!
+    @IBOutlet weak var websiteLabel: UILabel!
     @IBAction func SettingsButton(_ sender: UIButton) {
         animateIn()
     }
@@ -44,6 +51,57 @@ class ContactDetailsTableViewController: UITableViewController {
         fontSize = CGFloat(FontSlider.value)
         tableView.reloadData()
     }
+    @IBOutlet weak var dismissContactsButton: UIButton!
+
+    @IBAction func dismissContacts(_ sender: UIButton) {
+        
+        animateOutContacts()
+        
+                VisualEffectView.effect = nil
+
+    }
+    
+    @IBAction func websiteButton(_ sender: UIButton) {
+        
+        if let url = URL(string: websiteLabel.text!){
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+    
+    
+    
+    @IBAction func mailButton(_ sender: UIButton) {
+        //sendEmail()
+    }
+    
+//    func sendEmail() {
+//        let composeVC = MFMailComposeViewController()
+//        composeVC.mailComposeDelegate = self
+//        // Configure the fields of the interface.
+//        composeVC.setToRecipients([mailLabel.text!])
+//        composeVC.setSubject("")
+//        composeVC.setMessageBody("", isHTML: false)
+//        // Present the view controller modally.
+//        self.present(composeVC, animated: true, completion: nil)
+//    }
+    
+//    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+//        controller.dismiss(animated: true)
+//    }
+    
+    @IBAction func ContactsButton(_ sender: UIButton) {
+        animateInContacts()
+    }
+    
+    
+    @IBAction func phoneButton(_ sender: UIButton) {
+        
+        guard let number = URL(string: "telprompt://" + phoneLabel.text!) else { return }
+        UIApplication.shared.open(number, options: [:], completionHandler: nil)
+
+    }
+    
+   
     
     @IBOutlet weak var NightModeLabel: UILabel!
     
@@ -69,8 +127,14 @@ class ContactDetailsTableViewController: UITableViewController {
         effect = VisualEffectView.effect
         VisualEffectView.effect = nil
         SettingsPopUp.layer.cornerRadius = 10
+        ContactsPopup.layer.cornerRadius = 10
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(share(sender:)))
         HeaderImageView.image = UIImage(named: viewImage[indexOfCell])
+        
+        dismissContactButton.layer.cornerRadius = 5
+        dismissPopUpButton.layer.cornerRadius = 5
+        
         guard detailItem != nil else { return }
         span = MKCoordinateSpanMake(0.002, 0.002)
         
@@ -79,27 +143,38 @@ class ContactDetailsTableViewController: UITableViewController {
                 if let details = detailItem["details"]{
                     if let lat = detailItem["lattitude"]{
                         if let long = detailItem["longitude"]{
-                            
-                            Headings = [name,"Address"]
-                            texts = [details,address]
-                            FloatLatitude = NSString(string: lat).floatValue
-                            FloatLongitude = NSString(string: long).floatValue
-                            if let flat = FloatLatitude{
-                                print(flat)
-                                if let flong = FloatLongitude{
-                                    print(flong)
-                                    let location = CLLocationCoordinate2DMake(CLLocationDegrees(flat), CLLocationDegrees(flong))
-                                    let region = MKCoordinateRegionMake(location, span)
-                                    ContactMap.setRegion(region, animated: true)
-                                    let annotation = MKPointAnnotation()
-                                    annotation.coordinate = location
-                                    annotation.title = name
-                                    annotation.subtitle = address
-                                    
-                                    ContactMap.addAnnotation(annotation)
-                                    
+                            if let phone = detailItem["phone"]{
+                                if let mail = detailItem["mail"]{
+                                    if let website = detailItem["website"]{
+                                        
+                                        Headings = [name,"Address"]
+                                        texts = [details,address]
+                                        mailLabel.text = mail
+                                        phoneLabel.text = phone
+                                        websiteLabel.text = website
+                                        FloatLatitude = NSString(string: lat).floatValue
+                                        FloatLongitude = NSString(string: long).floatValue
+                                        if let flat = FloatLatitude{
+                                            print(flat)
+                                            if let flong = FloatLongitude{
+                                                print(flong)
+                                                let location = CLLocationCoordinate2DMake(CLLocationDegrees(flat), CLLocationDegrees(flong))
+                                                let region = MKCoordinateRegionMake(location, span)
+                                                ContactMap.setRegion(region, animated: true)
+                                                let annotation = MKPointAnnotation()
+                                                annotation.coordinate = location
+                                                annotation.title = name
+                                                annotation.subtitle = address
+                                                
+                                                ContactMap.addAnnotation(annotation)
+                                                
+                                            }
+                                        }
+
+                                    }
                                 }
                             }
+                            
                             
                             
                         }
@@ -135,6 +210,25 @@ class ContactDetailsTableViewController: UITableViewController {
         }, completion: {(success: Bool) in self.SettingsPopUp.removeFromSuperview()})
     }
     
+    func animateInContacts() {
+        self.view.addSubview(ContactsPopup)
+        ContactsPopup.center = self.HeaderImageView.center
+        
+        ContactsPopup.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+        ContactsPopup.alpha = 0
+        
+        UIView.animate(withDuration: 0.4, animations: {self.VisualEffectView.effect = self.effect
+            self.ContactsPopup.alpha = 1
+            self.ContactsPopup.transform = CGAffineTransform.identity
+        })
+    }
+    
+    func animateOutContacts()
+    {
+        UIView.animate(withDuration: 0.3, animations: {self.ContactsPopup.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+            self.ContactsPopup.alpha = 0
+        }, completion: {(success: Bool) in self.ContactsPopup.removeFromSuperview()})
+    }
 
 
     override func didReceiveMemoryWarning() {
