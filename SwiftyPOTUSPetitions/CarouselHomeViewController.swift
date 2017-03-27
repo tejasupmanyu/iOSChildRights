@@ -48,6 +48,8 @@ class CarouselHomeViewController: UIViewController, UICollectionViewDataSource,U
         performSegue(withIdentifier: vcs[indexPath.row], sender: self)
     }
     
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

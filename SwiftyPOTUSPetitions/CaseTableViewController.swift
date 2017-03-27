@@ -17,7 +17,7 @@ class CaseTableViewController: UITableViewController,UISearchResultsUpdating {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.hidesBarsOnSwipe = false
         filteredCases = cases
         self.resultSearchController.searchResultsUpdater = self
         self.resultSearchController.dimsBackgroundDuringPresentation = false

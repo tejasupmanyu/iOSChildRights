@@ -37,7 +37,7 @@ class QuizViewController: UIViewController {
         navigationItem.hidesBackButton = true
         navigationItem.title = "Quiz"
         
-        
+        self.navigationController?.navigationBar.isHidden = true
 //        // Do any additional setup after loading the view.
 //        
 //        player = AVPlayer(url: videoURL!)

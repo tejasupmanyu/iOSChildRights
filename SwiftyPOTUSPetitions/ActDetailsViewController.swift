@@ -62,7 +62,7 @@ class ActDetailsViewController: UITableViewController {
         SettingsPopUp.layer.cornerRadius = 10
         
         
-        
+        self.navigationController?.hidesBarsOnSwipe = false
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(share(sender:)))
         HeaderImageView.image = UIImage(named: viewImage[indexOfCell])
         

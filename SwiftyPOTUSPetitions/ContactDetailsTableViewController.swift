@@ -123,7 +123,7 @@ class ContactDetailsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.hidesBarsOnSwipe = false
         effect = VisualEffectView.effect
         VisualEffectView.effect = nil
         SettingsPopUp.layer.cornerRadius = 10

@@ -22,6 +22,7 @@ class ScoreViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar.isHidden = true
         navigationItem.hidesBackButton = true
         rewardImage.alpha = 0.0
         homeButton.alpha = 1.0
