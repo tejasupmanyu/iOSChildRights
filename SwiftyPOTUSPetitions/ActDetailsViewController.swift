@@ -18,7 +18,7 @@ class ActDetailsViewController: UITableViewController {
     var viewImage = ["hands","girl_flower","gr1"]
     var fontSize: CGFloat = 19.0
     var effect: UIVisualEffect!
-    
+    var count = true
     @IBOutlet weak var VisualEffectView: UIVisualEffectView!
     @IBOutlet var SettingsPopUp: UIView!
     @IBOutlet weak var LightSwitch: UISwitch!
@@ -42,12 +42,12 @@ class ActDetailsViewController: UITableViewController {
     @IBAction func LightSwitch(_ sender: UISwitch) {
         if sender.isOn{
            tableView.reloadData()
-           print("did it change?")
+           print("Night Mode")
            
         }
         else
         {
-            print("Turned OFF")
+            print("Night Mode OFF")
             tableView.reloadData()
             UIView.animate(withDuration: 0.5, animations: { self.NightModeLabel.alpha = 1})
         }
@@ -129,6 +129,24 @@ class ActDetailsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 3
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        if count{
+            cell.alpha = 0
+            let transform = CATransform3DTranslate(CATransform3DIdentity, -250, 20, 0)
+            cell.layer.transform = transform
+            
+            
+            UIView.animate(withDuration: 0.5, animations: {
+                cell.alpha = 1
+                cell.layer.transform  = CATransform3DIdentity
+            })
+           count = false
+        }
+        
+        
     }
 
     
