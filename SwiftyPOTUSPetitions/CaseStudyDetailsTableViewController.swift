@@ -25,6 +25,7 @@ class CaseStudyDetailsTableViewController: UITableViewController {
     @IBOutlet weak var LightSwitch: UISwitch!
     @IBOutlet weak var FontSlider: UISlider!
     
+    @IBOutlet weak var dismissButton: UIButton!
     @IBAction func SettingsButton(_ sender: UIButton) {
         animateIn()
     }
@@ -58,11 +59,11 @@ class CaseStudyDetailsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.hidesBarsOnSwipe = false
+        
         effect = VisualEffectView.effect
         VisualEffectView.effect = nil
         SettingsPopUp.layer.cornerRadius = 10
-
+        dismissButton.layer.cornerRadius = 5
         guard detailItem != nil else { return }
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(share(sender:)))
         HeaderImageView.image = UIImage(named: viewImage[indexOfCell])

@@ -36,6 +36,7 @@ class ActDetailsViewController: UITableViewController {
         tableView.reloadData()
     }
     
+    @IBOutlet weak var dismissButton: UIButton!
     @IBOutlet weak var NightModeLabel: UILabel!
     @IBOutlet weak var HeaderImageView: UIImageView!
     
@@ -61,8 +62,8 @@ class ActDetailsViewController: UITableViewController {
         VisualEffectView.effect = nil
         SettingsPopUp.layer.cornerRadius = 10
         
+        dismissButton.layer.cornerRadius = 5
         
-        self.navigationController?.hidesBarsOnSwipe = false
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(share(sender:)))
         HeaderImageView.image = UIImage(named: viewImage[indexOfCell])
         

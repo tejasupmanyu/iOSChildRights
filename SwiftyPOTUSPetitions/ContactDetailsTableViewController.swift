@@ -102,6 +102,9 @@ class ContactDetailsTableViewController: UITableViewController {
     }
     
    
+    @IBOutlet weak var visitButton: UIButton!
+    @IBOutlet weak var callButton: UIButton!
+    @IBOutlet weak var MailButton: UIButton!
     
     @IBOutlet weak var NightModeLabel: UILabel!
     
@@ -123,12 +126,15 @@ class ContactDetailsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.hidesBarsOnSwipe = false
+        
         effect = VisualEffectView.effect
         VisualEffectView.effect = nil
         SettingsPopUp.layer.cornerRadius = 10
         ContactsPopup.layer.cornerRadius = 10
         
+        visitButton.layer.cornerRadius = 5
+        MailButton.layer.cornerRadius = 5
+        callButton.layer.cornerRadius = 5
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(share(sender:)))
         HeaderImageView.image = UIImage(named: viewImage[indexOfCell])
         

@@ -20,6 +20,7 @@ class CarouselHomeViewController: UIViewController, UICollectionViewDataSource,U
     var vcs = ["ActsList","CasesList","ContactsList","QuizStart","CreditsList"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController!.interactivePopGestureRecognizer?.delegate = self
         navigationItem.title = "Butterflies & Unicorns"
         
         carouselView.dataSource = self
@@ -58,6 +59,19 @@ class CarouselHomeViewController: UIViewController, UICollectionViewDataSource,U
 
 }
 
-
+extension CarouselHomeViewController: UIGestureRecognizerDelegate {
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        
+        if navigationController?.viewControllers.count == 1 {
+            return true
+        }
+        
+        if let navigationController = self.navigationController as? NavigationStack {
+            navigationController.showControllers()
+        }
+        
+        return false
+    }
+}
 
 
