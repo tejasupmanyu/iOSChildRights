@@ -21,14 +21,17 @@ class ActDetailsViewController: UITableViewController {
     var count = true
     @IBOutlet weak var VisualEffectView: UIVisualEffectView!
     @IBOutlet var SettingsPopUp: UIView!
+    @IBOutlet weak var settingsButton: UIButton!
     @IBOutlet weak var LightSwitch: UISwitch!
     @IBOutlet weak var FontSlider: UISlider!
     
     @IBAction func SettingsButton(_ sender: UIButton) {
         animateIn()
+        settingsButton.alpha = 0
     }
     @IBAction func DismissPopUp(_ sender: UIButton) {
         animateOut()
+        settingsButton.alpha = 1
         VisualEffectView.effect = nil
     }
     @IBAction func FontSizeSlider(_ sender: UISlider) {

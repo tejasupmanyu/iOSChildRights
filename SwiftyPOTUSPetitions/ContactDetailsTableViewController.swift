@@ -31,6 +31,8 @@ class ContactDetailsTableViewController: UITableViewController {
     var effect: UIVisualEffect!
     
     @IBOutlet weak var VisualEffectView: UIVisualEffectView!
+    @IBOutlet weak var settingsButton: UIButton!
+    @IBOutlet weak var contactsButton: UIButton!
     @IBOutlet var SettingsPopUp: UIView!
     @IBOutlet var ContactsPopup: UIView!
     @IBOutlet weak var LightSwitch: UISwitch!
@@ -42,9 +44,13 @@ class ContactDetailsTableViewController: UITableViewController {
     @IBOutlet weak var websiteLabel: UILabel!
     @IBAction func SettingsButton(_ sender: UIButton) {
         animateIn()
+        settingsButton.alpha = 0
+        contactsButton.alpha = 0
     }
     @IBAction func DismissPopUp(_ sender: UIButton) {
         animateOut()
+        settingsButton.alpha = 1
+        contactsButton.alpha = 1
         VisualEffectView.effect = nil
     }
     @IBAction func FontSizeSlider(_ sender: UISlider) {
@@ -56,7 +62,8 @@ class ContactDetailsTableViewController: UITableViewController {
     @IBAction func dismissContacts(_ sender: UIButton) {
         
         animateOutContacts()
-        
+        settingsButton.alpha = 1
+        contactsButton.alpha = 1
                 VisualEffectView.effect = nil
 
     }
@@ -91,6 +98,8 @@ class ContactDetailsTableViewController: UITableViewController {
     
     @IBAction func ContactsButton(_ sender: UIButton) {
         animateInContacts()
+        settingsButton.alpha = 0
+        contactsButton.alpha = 0
     }
     
     

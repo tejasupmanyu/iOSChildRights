@@ -25,6 +25,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var scoreBoard: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
    
+    @IBOutlet weak var thumbs: SpringImageView!
     
     
     override func viewDidAppear(_ animated: Bool) {
@@ -34,8 +35,6 @@ class QuizViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.hidesBackButton = true
-        navigationItem.title = "Quiz"
         
         self.navigationController?.navigationBar.isHidden = true
 //        // Do any additional setup after loading the view.
@@ -75,12 +74,28 @@ class QuizViewController: UIViewController {
         if (sender.tag == Int(rightAnswerPlacement))
         {
             print ("RIGHT!")
+             thumbs.image = UIImage(named: "thumbsup")
+            thumbs.alpha = 1
+            thumbs.animation = "pop"
+            thumbs.animate()
+            UIView.animate(withDuration: 1, animations: {
+            self.thumbs.alpha = 0
+            })
             points += 1
             scoreBoard.text = String(points)
         }
         else
         {
             print ("WRONG!!!!!!")
+            thumbs.image = UIImage(named: "thumbsdown")
+            thumbs.alpha = 1
+            thumbs.animation = "pop"
+            thumbs.animate()
+            UIView.animate(withDuration: 1, animations: {
+                self.thumbs.alpha = 0
+            })
+
+            
         }
         
         if (currentQuestion != questions.count)
@@ -89,6 +104,10 @@ class QuizViewController: UIViewController {
         }
         else
         {
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+                // do stuff 4 seconds later
+            }
             if let vc = storyboard?.instantiateViewController(withIdentifier: "showScore") as? ScoreViewController {
                 // 2: success! Set its property
                 vc.score = points

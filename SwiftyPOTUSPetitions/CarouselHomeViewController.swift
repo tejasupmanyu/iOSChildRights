@@ -15,11 +15,12 @@ class CarouselHomeViewController: UIViewController, UICollectionViewDataSource,U
     @IBOutlet weak var BackgroundImage: UIImageView!
     @IBOutlet weak var carouselView: UICollectionView!
     
-    var BackGroundImageArray = ["HomeScreen","LaunchScreen","flag","boys","me"]
+    var BackGroundImageArray = ["HomeScreen","LaunchScreen","flag","boys","coverVisionArray"]
     var CellTitles = ["Acts","Case Studies","StakeHolders","Quiz","Credits"]
     var vcs = ["ActsList","CasesList","ContactsList","QuizStart","CreditsList"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.isHidden = false
         navigationController!.interactivePopGestureRecognizer?.delegate = self
         navigationItem.title = "Butterflies & Unicorns"
         
