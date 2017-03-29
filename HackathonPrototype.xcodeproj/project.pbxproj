@@ -61,6 +61,10 @@
 		D67BBE851E89AF7D00D09E18 /* PaperOnboarding.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D67BBE831E89AF7D00D09E18 /* PaperOnboarding.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D68DB52B1E86D9DB00B47D56 /* ActDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68DB52A1E86D9DB00B47D56 /* ActDetailsViewController.swift */; };
 		D68DB52D1E86DBA500B47D56 /* ActDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68DB52C1E86DBA500B47D56 /* ActDetailsTableViewCell.swift */; };
+		D6A5D0651E8BAC3F006F024B /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A5D0641E8BAC3F006F024B /* NewsTableViewController.swift */; };
+		D6A5D0671E8BAE5E006F024B /* ArticleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A5D0661E8BAE5E006F024B /* ArticleViewCell.swift */; };
+		D6A5D0691E8BAFAB006F024B /* ArticleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A5D0681E8BAFAB006F024B /* ArticleObject.swift */; };
+		D6A5D06B1E8BBC0C006F024B /* DetailNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A5D06A1E8BBC0C006F024B /* DetailNewsViewController.swift */; };
 		D6A6C6A41E76CCAC009EF39A /* CaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6C6A31E76CCAC009EF39A /* CaseTableViewController.swift */; };
 		D6A6C6A61E76CCC2009EF39A /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6C6A51E76CCC2009EF39A /* ContactTableViewController.swift */; };
 		D6A6C6AD1E76CFC5009EF39A /* sampleCases.json in Resources */ = {isa = PBXBuildFile; fileRef = D6A6C6AB1E76CFC5009EF39A /* sampleCases.json */; };
@@ -147,6 +151,10 @@
 		D67BBE831E89AF7D00D09E18 /* PaperOnboarding.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PaperOnboarding.framework; path = Carthage/Build/iOS/PaperOnboarding.framework; sourceTree = "<group>"; };
 		D68DB52A1E86D9DB00B47D56 /* ActDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActDetailsViewController.swift; sourceTree = "<group>"; };
 		D68DB52C1E86DBA500B47D56 /* ActDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		D6A5D0641E8BAC3F006F024B /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		D6A5D0661E8BAE5E006F024B /* ArticleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewCell.swift; sourceTree = "<group>"; };
+		D6A5D0681E8BAFAB006F024B /* ArticleObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleObject.swift; sourceTree = "<group>"; };
+		D6A5D06A1E8BBC0C006F024B /* DetailNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailNewsViewController.swift; sourceTree = "<group>"; };
 		D6A6C6A31E76CCAC009EF39A /* CaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseTableViewController.swift; sourceTree = "<group>"; };
 		D6A6C6A51E76CCC2009EF39A /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
 		D6A6C6AB1E76CFC5009EF39A /* sampleCases.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleCases.json; sourceTree = "<group>"; };
@@ -259,6 +267,10 @@
 				D6F3D2891E8581180072BF1B /* CarouselHomeViewController.swift */,
 				D6F3D28B1E858B4E0072BF1B /* CarouselCollectionViewCell.swift */,
 				D65BF2551E7A92CF00014092 /* PeopleTableViewCell.swift */,
+				D6A5D0641E8BAC3F006F024B /* NewsTableViewController.swift */,
+				D6A5D06A1E8BBC0C006F024B /* DetailNewsViewController.swift */,
+				D6A5D0661E8BAE5E006F024B /* ArticleViewCell.swift */,
+				D6A5D0681E8BAFAB006F024B /* ArticleObject.swift */,
 				D62AAD861E5CA3A70074BFBA /* Main.storyboard */,
 				D62AAD891E5CA3A70074BFBA /* Assets.xcassets */,
 				D62AAD8B1E5CA3A70074BFBA /* LaunchScreen.storyboard */,
@@ -367,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D62590671E8AA6A800FA0B02 /* NavigationStack.swift in Sources */,
+				D6A5D0671E8BAE5E006F024B /* ArticleViewCell.swift in Sources */,
 				D6F3D28C1E858B4E0072BF1B /* CarouselCollectionViewCell.swift in Sources */,
 				D6A8C7D41E77B33E00704C42 /* tutorialViewController.swift in Sources */,
 				D615769A1E8B00F400A3664D /* KeyboardLayoutConstraint.swift in Sources */,
@@ -393,12 +406,14 @@
 				D615768D1E8B00F400A3664D /* AsyncButton.swift in Sources */,
 				D615769F1E8B00F400A3664D /* Spring.swift in Sources */,
 				D6B59FA21E7964F70009DDA0 /* RoundButton.swift in Sources */,
+				D6A5D0651E8BAC3F006F024B /* NewsTableViewController.swift in Sources */,
 				D61576A31E8B00F400A3664D /* SpringLabel.swift in Sources */,
 				D61576961E8B00F400A3664D /* DesignableTextView.swift in Sources */,
 				D615768E1E8B00F400A3664D /* AsyncImageView.swift in Sources */,
 				D645A25A1E76737F002D8346 /* LaunchViewController.swift in Sources */,
 				D62AAD851E5CA3A70074BFBA /* ViewController.swift in Sources */,
 				D61576901E8B00F400A3664D /* BlurView.swift in Sources */,
+				D6A5D0691E8BAFAB006F024B /* ArticleObject.swift in Sources */,
 				D65A4D481E87A297008781DA /* ContactDetailsTableViewController.swift in Sources */,
 				D61576A91E8B00F400A3664D /* UnwindSegue.swift in Sources */,
 				D68DB52B1E86D9DB00B47D56 /* ActDetailsViewController.swift in Sources */,
@@ -411,6 +426,7 @@
 				D6A8C7D21E77B24800704C42 /* onBoard.swift in Sources */,
 				D61576921E8B00F400A3664D /* DesignableImageView.swift in Sources */,
 				D615769D1E8B00F400A3664D /* Misc.swift in Sources */,
+				D6A5D06B1E8BBC0C006F024B /* DetailNewsViewController.swift in Sources */,
 				D62AAD831E5CA3A70074BFBA /* AppDelegate.swift in Sources */,
 				D612AA001E871353003E6E04 /* CaseStudyDetailsTableViewController.swift in Sources */,
 				D62590651E8AA32C00FA0B02 /* RAMPaperSwitch.swift in Sources */,
